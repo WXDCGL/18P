@@ -1,0 +1,19 @@
+.wrapper{
+    background: fixed;
+    background-image: url('../pic/bg.png');
+    background-size: cover;
+    /* width: 100vw; */
+	margin: 0 auto;
+}
+
+/* main{
+    background-image: url(); 
+    margin: 40px auto;
+}*/
+
+.banner{
+
+    width: 1200px;
+    height: 450px;
+    margin: 40px auto;
+} 

@@ -1,0 +1,125 @@
+.wrapper{
+    background: fixed;
+    background-image: url('../pic/bg.png');
+    background-size: cover;
+    /* width: 100vw; */
+	margin: 0 auto;
+}
+
+/* main{
+    background-image: url(); 
+    margin: 40px auto;
+} */
+
+.banner{
+    width: 1200px;
+    height: 450px;
+    margin: 40px auto;
+}
+
+.news{
+    display: flex;
+    position: relative;
+    margin: 40px auto;
+}
+
+.news h1{
+    justify-items: flex-start;
+    position: absolute;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: #b331d7;
+    width: 50vw;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+}
+
+.nm{
+    justify-content: center;
+    z-index: 1;
+    background-color: #3142d7;
+    height: 480px;
+    width: 1200px;
+    margin: 40px auto;
+}
+
+.games{
+    display: flex;
+    height: 580px;
+    width: 100vw;
+    margin: 40px auto;
+    position: relative;
+}
+
+.gg{
+    position: absolute;
+    z-index: 1;
+}
+
+.games h1{
+    justify-items: flex-end;
+    align-self: self-end;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: #b331d7;
+    width: 50vw;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+}
+
+.games ul{
+    width: 100vw;
+    margin: auto;
+}
+
+.gb{
+    position: absolute;
+    background-color: #1299b7;
+    height: 380px;
+    width: 100vw;
+    margin: 100px auto;
+}
+
+.media{
+    display: flex;
+    position: relative;
+    margin: 300px 0 120px 0;
+    height: 760px;
+    width: 1200px;
+    margin: 40px auto;
+    /* overflow: hidden; */
+}
+
+.media img{
+    /* display: none; */
+    position: absolute;
+    z-index: 1;
+    /* height: 100%; */
+    margin-top: -300px;
+
+}
+
+.media h1{
+    /* justify-items: center; */
+    z-index: 2;
+    width: 1200px;
+    position: absolute;
+    background-color: #b331d7;
+    margin: 40px auto;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+}
+
+.media ul{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+}

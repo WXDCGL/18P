@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inter:wght@400;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/18P.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="ccs/index.css"> -->
+    <title>index</title>
+</head>
+<body>
+    <!-- <select id="lang-select" onchange="changeLanguage(this.value)">
+        <option value="en" selected>English</option>
+        <option value="zh-TW">繁體中文</option>
+      </select>
+  
+      <script src="your-script.js"></script> -->
+    <header>
+        <div class="logo">
+            <a href="18P_index.html">
+                <img src="pic/logo_w.svg" alt="G.REX">
+            </a>
+        </div>
+        <nav class="top">
+            <ul>
+                <!-- <li></li> -->
+                <li><a href="18P_news.html">
+                    <h2  data-lang="en">NEWS</h2>
+                    <h2  data-lang="zh-TW">最新消息</h2>
+                    <h2  data-lang="jp">ニュース</h2></a></li>
+                <li><a href="18P_games.html">
+                    <h2  data-lang="en">GAMES</h2>
+                    <h2  data-lang="zh-TW">遊戲</h2>
+                    <h2  data-lang="jp">ゲーム</h2></a></li>
+                <li><a href="18P_event.html">
+                    <h2  data-lang="en">EVENT</h2>
+                    <h2  data-lang="zh-TW">活動情報</h2>
+                    <h2  data-lang="jp">ゲーム</h2></a></li>
+                <li><a href="18P_goods.html">
+                    <h2  data-lang="en">GOODS</h2>
+                    <h2  data-lang="zh-TW">周邊商品</h2>
+                    <h2  data-lang="jp">グッズ</h2></a></li>
+                <li><a href="18P_support.html">
+                    <h2  data-lang="en">SUPPORT</h2>
+                    <h2  data-lang="zh-TW">常見問題</h2>
+                    <h2  data-lang="jp">サポート</h2></a></li>
+                <li><a href="18P_contact.html">
+                    <h2  data-lang="en">CONTACT</h2>
+                    <h2  data-lang="zh-TW">聯絡我們</h2>
+                    <h2  data-lang="jp">お問い合わせ</h2></a></li>
+                <li><a href="18P_login.html">
+                    <h2  data-lang="en">LOGIN</h2>
+                    <h2  data-lang="zh-TW">會員登入</h2>
+                    <h2  data-lang="jp">ログイン</h2></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <main>
+            <div class="banner">
+                <iframe src="18P_banner.html" width="1200px" height="450px"></iframe>
+            </div>
+            <div class="news">
+                <h1>NEWS</h1>
+            </div>
+
+        </main>
+        <footer>
+            <ul class="f">
+                <li class="fm">
+                    <ul>
+                        <li><a href="NEWS">NEWS</a></li>
+                        <li><a href="GAMES">GAMES</a></li>
+                        <li><a href="EVENT">EVENT</a></li>
+                        <li><a href="GOODS">GOODS</a></li>
+                        <li><a href="SUPPORT">SUPPORT</a></li>
+                        <li><a href="CONTACT">CONTACT</a></li>
+                    </ul>
+                </li>
+                <li class="fm">
+                    <ul>
+                        <li><a href="ABOUT">ABOUT</a></li>
+                        <br>
+                        <br>
+                        <br>
+                        <li>LANGUE:
+                            <ul>
+                                <select id="lang-select" onchange="changeLanguage(this.value)">
+                                    <option value="en" selected>English</option>
+                                    <option value="zh-TW">繁體中文</option>
+                                    <option value="jp">日本語</option>
+                                  </select>
+                              
+                                  <script src="your-script.js"></script>
+                                <!-- <li><a class="ll" href="EN">EN</a></li>
+                                <li><a class="ll" href="ZH">ZH</a></li>
+                                <li><a class="ll" href="JP">JP</a></li> -->
+                            </ul>
+                        </li>   
+                    </ul>
+                </li>
+                <li class="fm">
+                    <ul>
+                        <li><a href="F"><i class="bi bi-facebook"></i> FACEBOOK</a></li>
+                        <li><a href="T"><i class="bi bi-twitter"></i> TWITTER</a></li>
+                        <li><a href="Y"><i class="bi bi-youtube"></i> YOUTUBE</a></li>
+                        <br>
+                        <br>
+                        <li>© G.REX</li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            var elements = document.querySelectorAll('[data-lang]');
+            for (var i = 0; i < elements.length; i++) {
+                var element = elements[i];
+                if (element.getAttribute('data-lang') === lang) {
+                     element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            }
+
+             // 存儲當前選擇的語言到本地存儲
+             localStorage.setItem('lang', lang);
+        }
+
+        // 載入時檢查本地存儲，如果有先前選擇的語言，則使用該語言，否則使用預設語言（例如英語）
+        var lang = localStorage.getItem('lang') || 'en';
+        document.getElementById('lang-select').value = lang;
+        changeLanguage(lang);
+    </script>
+</body>
+</html>

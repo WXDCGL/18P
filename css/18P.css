@@ -1,0 +1,111 @@
+@import url(reset.css);
+body{
+    font-family: inter, '微軟正黑體';
+    line-height: 1.5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100vw;
+    box-shadow: inset 0px -10px 0px 0px rgb(0, 0, 0); 
+
+}
+
+.logo img {
+    min-width: 100%;
+    height: 80px;
+
+}
+
+.top{
+    background-image: url('../pic/menu_bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.top ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+}
+
+.top li{
+    width: 100px;
+    padding: 0 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 1px;
+}
+
+/* .top li:first-child{
+    flex: 1;
+} */
+
+.top a{
+    display: block;
+    font-family: iceland;
+    font-size: 24px;
+    color: #5b5b5b;
+    line-height: 70px;
+    margin: auto 0;
+    text-decoration: none;
+    justify-content: center;
+
+}
+ 
+/* 更改繁體中文語系的字體大小 */
+[data-lang="zh-TW"] {
+    font-size: 18px;
+  }
+
+/* 更改日文語系的字體大小 */
+[data-lang="jp"] {
+    font-size: 16px;
+  }
+
+/* -----------inside---------- */
+
+/* ------------------------ */
+footer{
+    margin:  0 auto;
+    width: 100vw;
+    height: 200px;
+    background-color: #e5e5e5;
+    margin: 0 auto;
+}
+
+.f{
+    display: flex;
+    margin: 0 360px;
+}
+
+.fm{
+    float: left;
+    padding: 20px;
+    /* display: block; */
+
+    height: 164px;
+    width: 380px;
+    margin: auto;
+}
+
+.fm li{
+    color: #b5b5b5;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.ll{
+    float: left;
+    margin-right: 20px;
+}
+
+.fm a{
+    color: #b5b5b5;
+    font-size: 16px;
+    text-decoration: none;
+}
