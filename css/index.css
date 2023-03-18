@@ -63,7 +63,7 @@ html, body {
 
 .nmr{
     width:870px;
-    background-image: url(/pic/MIXTAPE.png);
+    background-image: url("/pic/MIXTAPE.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
