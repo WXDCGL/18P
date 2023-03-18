@@ -10,15 +10,6 @@ html, body {
     z-index: -2;
 }
 
-/* main{
-    position: relative;
-    background: fixed;
-    background-image: url('../pic/bg.png');
-    background-size: cover;
-	margin: 0 auto;
-    z-index: -2;
-} */
-
 .banner{
     width: 1200px;
     height: 450px;
@@ -53,17 +44,14 @@ html, body {
 .nm{
     display: flex;
     justify-content: flex-end;
-    /* z-index: 1; */
-    /* background-color: #cccccc; */
     height: 480px;
     width: 1200px;
     margin: 60px auto 40px;
 }
 
 .nml{
-    /* flex-grow: 2; */
     width: 200px;
-    background-color: #cccccc;
+    background-color: #e5e5e5;
     padding: 40px 20px;
 }
 
@@ -75,8 +63,7 @@ html, body {
 
 .nmr{
     width:870px;
-    /* flex-grow: 3; */
-    background-image: url(/pic/imperial.png.adapt.1456w.png);
+    background-image: url(/pic/MIXTAPE.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

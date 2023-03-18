@@ -1,26 +1,14 @@
 html, body {
     overflow-x: hidden;
-  }
+}
 
 .wrapper{
     background: fixed;
     background-image: url('../pic/bg.png');
     background-size: cover;
-    /* width: 100vw; */
 	margin: 0 auto;
+    z-index: -2;
 }
-
-/* main{
-    background-image: url(); 
-    margin: 40px auto;
-}*/
-
-.banner{
-
-    width: 1200px;
-    height: 450px;
-    margin: 40px auto;
-} 
 
 .banner{
     width: 1200px;
@@ -47,6 +35,20 @@ html, body {
     text-align: center;
 }
 
+.news a{
+    text-decoration: none;
+    color: #5b5b5b;
+    margin: 0 auto;
+}
+
+/* .nm{
+    display: flex;
+    justify-content: flex-end;
+    height: 480px;
+    width: 1200px;
+    margin: 60px auto 40px;
+} */
+
 .nm{
     justify-content: center;
     z-index: 1;
@@ -55,3 +57,4 @@ html, body {
     width: 1200px;
     margin: 40px auto;
 }
+

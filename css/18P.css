@@ -102,15 +102,21 @@ footer{
     margin-right: 20px;
 }
 
+.fmli{
+    padding: 0 20px;
+}
+
 .fm a{
     color: #b5b5b5;
     font-size: 16px;
     text-decoration: none;
+    padding: 0 20px;
 }
 
 .fm a:hover{
     display: block;
     background-color: #5b5b5b;
+    border-radius: 0.25em;
 }
 
 span{
