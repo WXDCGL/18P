@@ -86,10 +86,8 @@ footer{
 .fm{
     float: left;
     padding: 20px;
-    /* display: block; */
-
-    height: 164px;
-    width: 380px;
+    height: 160px;
+    width: auto;
     margin: auto;
 }
 
@@ -108,4 +106,17 @@ footer{
     color: #b5b5b5;
     font-size: 16px;
     text-decoration: none;
+}
+
+.fm a:hover{
+    display: block;
+    background-color: #5b5b5b;
+}
+
+span{
+    display: block;
+    background-color: #e5e5e5;
+    color: #b5b5b5;
+    text-align: center;
+    border-top: 1px solid #b5b5b5;
 }

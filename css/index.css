@@ -1,14 +1,26 @@
+html, body {
+    overflow-x: hidden;
+}
+
 .wrapper{
+    /* position: relative; */
     background: fixed;
     background-image: url('../pic/bg.png');
     background-size: cover;
-    /* width: 100vw; */
 	margin: 0 auto;
+    /* z-index: -2; */
+    /* width: 100vw;
+    height: 100%; */
+    /* overflow-x: hidden; */
 }
 
 /* main{
-    background-image: url(); 
-    margin: 40px auto;
+    position: relative;
+    background: fixed;
+    background-image: url('../pic/bg.png');
+    background-size: cover;
+	margin: 0 auto;
+    z-index: -2;
 } */
 
 .banner{
@@ -37,12 +49,31 @@
 }
 
 .nm{
+    display: flex;
     justify-content: center;
     z-index: 1;
     background-color: #3142d7;
     height: 480px;
     width: 1200px;
     margin: 40px auto;
+
+    overflow: hidden;
+}
+
+.nml{
+    flex-grow: 1;
+    background-color: #cccccc;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.nml h2{
+    font-weight:bold;
+}
+
+.nmr{
+    flex-grow: 3;
+    
 }
 
 .games{
@@ -87,29 +118,43 @@
 .media{
     display: flex;
     position: relative;
-    margin: 300px 0 120px 0;
-    height: 760px;
+    height: 500px;
     width: 1200px;
-    margin: 40px auto;
+    margin: 200px auto 0;
+    padding: 300px 400px 0 auto;
     /* overflow: hidden; */
+    /* background-image: url(/pic/Union.png);
+    background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-position: -300px -200px; */
 }
 
-.media img{
-    /* display: none; */
+.media::before{
+    /* display: flex;
+    position: relative; */
+    height: 500px;
+    width: 1200px;
+    margin: 200px auto 0;
+    padding: 300px 400px 0 auto;
+    /* overflow: hidden; */
+    background-image: url(/pic/Union.png);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* background-position: -300px -200px; */
+}
+
+/* .media img{
+    justify-content: flex-start;
     position: absolute;
-    z-index: 1;
-    /* height: 100%; */
-    margin-top: -300px;
-
-}
+    z-index: -1;
+    margin: -300px 0 0 -600px;
+} */
 
 .media h1{
-    /* justify-items: center; */
     z-index: 2;
     width: 1200px;
     position: absolute;
     background-color: #b331d7;
-    margin: 40px auto;
     color: rgb(255, 255, 255);
     font-size: 32px;
     font-weight: bold;
@@ -121,5 +166,5 @@
     width: 1200px;
     display: flex;
     justify-content: space-between;
-    margin: 80px auto;
+    margin: 120px auto;
 }

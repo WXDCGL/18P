@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+  }
+
 .wrapper{
     background: fixed;
     background-image: url('../pic/bg.png');
@@ -17,3 +21,37 @@
     height: 450px;
     margin: 40px auto;
 } 
+
+.banner{
+    width: 1200px;
+    height: 450px;
+    margin: 40px auto;
+}
+
+.news{
+    display: flex;
+    position: relative;
+    margin: 40px auto;
+}
+
+.news h1{
+    justify-items: flex-start;
+    position: absolute;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: #b331d7;
+    width: 50vw;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+}
+
+.nm{
+    justify-content: center;
+    z-index: 1;
+    background-color: #3142d7;
+    height: 480px;
+    width: 1200px;
+    margin: 40px auto;
+}
