@@ -3,15 +3,11 @@ html, body {
 }
 
 .wrapper{
-    /* position: relative; */
     background: fixed;
     background-image: url('../pic/bg.png');
     background-size: cover;
 	margin: 0 auto;
-    /* z-index: -2; */
-    /* width: 100vw;
-    height: 100%; */
-    /* overflow-x: hidden; */
+    z-index: -2;
 }
 
 /* main{
@@ -48,32 +44,42 @@ html, body {
     text-align: center;
 }
 
+.news a{
+    text-decoration: none;
+    color: #5b5b5b;
+    margin: 0 auto;
+}
+
 .nm{
     display: flex;
-    justify-content: center;
-    z-index: 1;
-    background-color: #3142d7;
+    justify-content: flex-end;
+    /* z-index: 1; */
+    /* background-color: #cccccc; */
     height: 480px;
     width: 1200px;
-    margin: 40px auto;
-
-    overflow: hidden;
+    margin: 60px auto 40px;
 }
 
 .nml{
-    flex-grow: 1;
+    /* flex-grow: 2; */
+    width: 200px;
     background-color: #cccccc;
-    padding-top: 40px;
-    padding-left: 20px;
+    padding: 40px 20px;
 }
 
 .nml h2{
+    margin-bottom: 20px;
     font-weight:bold;
+    font-size: 24px;
 }
 
 .nmr{
-    flex-grow: 3;
-    
+    width:870px;
+    /* flex-grow: 3; */
+    background-image: url(/pic/imperial.png.adapt.1456w.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .games{
@@ -110,45 +116,23 @@ html, body {
 .gb{
     position: absolute;
     background-color: #1299b7;
+    opacity: .8;
     height: 380px;
     width: 100vw;
     margin: 100px auto;
 }
 
 .media{
+
+    margin-top: 200px; 
+}
+.mm{
     display: flex;
     position: relative;
     height: 500px;
     width: 1200px;
-    margin: 200px auto 0;
-    padding: 300px 400px 0 auto;
-    /* overflow: hidden; */
-    /* background-image: url(/pic/Union.png);
-    background-repeat: no-repeat; */
-    /* background-size: contain; */
-    /* background-position: -300px -200px; */
+    margin: 0 auto;
 }
-
-.media::before{
-    /* display: flex;
-    position: relative; */
-    height: 500px;
-    width: 1200px;
-    margin: 200px auto 0;
-    padding: 300px 400px 0 auto;
-    /* overflow: hidden; */
-    background-image: url(/pic/Union.png);
-    background-repeat: no-repeat;
-    /* background-size: contain; */
-    /* background-position: -300px -200px; */
-}
-
-/* .media img{
-    justify-content: flex-start;
-    position: absolute;
-    z-index: -1;
-    margin: -300px 0 0 -600px;
-} */
 
 .media h1{
     z-index: 2;
@@ -167,4 +151,11 @@ html, body {
     display: flex;
     justify-content: space-between;
     margin: 120px auto;
+}
+
+.media img{
+    max-height: 960px;
+    margin: -800px 0 0 -200px;
+    opacity: .8;
+    pointer-events: none;
 }
