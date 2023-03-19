@@ -115,14 +115,22 @@ footer{
     padding: 0 20px;
 }
 
+<<<<<<< HEAD
 .footmain a{
+=======
+.fm a{
+>>>>>>> 3461363e225dc51a8caa89fc8812ea5f475ebde1
     color: #b5b5b5;
     font-size: 16px;
     text-decoration: none;
     padding: 0 20px;
 }
 
+<<<<<<< HEAD
 .footmain a:hover{
+=======
+.fm a:hover{
+>>>>>>> 3461363e225dc51a8caa89fc8812ea5f475ebde1
     display: block;
     background-color: #5b5b5b;
     border-radius: 0.25em;
