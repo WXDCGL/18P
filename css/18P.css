@@ -63,11 +63,13 @@ header{
 /* 更改繁體中文語系的字體大小 */
 [data-lang="zh-TW"] {
     font-size: 18px;
+    font-weight: bold;
   }
 
 /* 更改日文語系的字體大小 */
 [data-lang="jp"] {
     font-size: 16px;
+    font-weight: bold;
   }
 
 /* -----------inside---------- */

@@ -30,7 +30,6 @@
 .newsmain ul{
     /* display: flex;*/
     justify-content: center; 
-
     /* height: 400px;*/
     width: 1200px;
     margin: 70px auto; 
@@ -45,6 +44,17 @@
     height: 300px;
     /* align-items: center; */
     margin-bottom: 20px;
+}
+
+.newsmain li:hover{
+    background-color: rgba(255, 255, 255, 1);
+    border-left: 40px solid #b331d7;
+    border-left: 40px solid #f5CBFF;
+    outline: 4px ridge #b331d7;
+    color: #b331d7;
+    margin-bottom: 20px;
+    transform: scale(1.05);
+    transition-duration: .3s;
 }
 
 .newsmain ol{
@@ -71,10 +81,16 @@
     margin: 0 auto;   
 }
 
+.gamename{
+    background-color: #b5b5b5;
+    color: #ffffff;
+    font-family: iceland;
+    line-height: 30px;
+}
+
 .newsmain h2{
     font-size: 24px;
     font-weight: bold;
-    color: #5b5b5b;
     padding: 0 20px;
 }
 

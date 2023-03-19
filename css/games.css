@@ -1,0 +1,95 @@
+.banner{
+    width: 1200px;
+    height: 450px;
+    margin: 40px auto;
+}
+
+/* .games{
+    display: flex;
+    position: relative;
+    margin: 40px auto;
+} */
+
+.games h1{
+    justify-items: flex-start;
+    position: absolute;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: #b331d7;
+    width: 50vw;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+}
+
+.gamesmain{
+    padding-top: 20px;
+}
+
+.gamesmain ul{
+    display: flex;
+    justify-content: space-between; 
+    width: 1200px;
+    flex-wrap: wrap;
+    margin: 60px auto 70px; 
+
+}
+
+.gamesmain li{
+    padding-top: 20px;
+    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.3));
+}
+
+.gamesmain a{
+    display: block;
+    width: 540px;
+    background-color: rgba(255, 255, 255, .5);
+    /* border-left: 20px solid #f5CBFF; */
+    border: 20px solid #ffffff;
+    border-radius: .2rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+    filter: saturate(0%);
+}
+
+.gamesmain a:hover{
+    outline: 4px solid #ffffff;
+    border-left: 0;
+    margin-bottom: 20px;
+    transform: scale(1.1);
+    border-left: 20px solid #1299b7;
+    border-right: 20px solid #f5CBFF;
+    margin-bottom: 20px;
+    transition-duration: .3s;
+    filter: saturate(100%);
+}
+
+.gamesmain img{
+    display: flex;
+    width: 540px;
+    height: 300px;
+    background-image: url("../pic/G.REX.png");
+    object-fit: cover;
+  
+}
+
+.gamename{
+    background-color: #5b5b5b;
+  
+
+}
+
+.gamename:hover{
+    background-color: #b331d7;
+
+
+}
+
+.gamename h2{
+    color: #ffffff;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
