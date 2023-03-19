@@ -1,26 +1,14 @@
-.wrapper{
-    background: fixed;
-    background-image: url('../pic/bg.png');
-    background-size: cover;
-    /* width: 100vw; */
-	margin: 0 auto;
-}
-
-/* main{
-    background-image: url(); 
-    margin: 40px auto;
-} */
-
 .banner{
     width: 1200px;
     height: 450px;
     margin: 40px auto;
 }
 
+
 .news{
     display: flex;
     position: relative;
-    margin: 40px auto;
+    margin-top: 80px;
 }
 
 .news h1{
@@ -36,24 +24,49 @@
     text-align: center;
 }
 
-.nm{
-    justify-content: center;
-    z-index: 1;
-    background-color: #3142d7;
+.news a{
+    text-decoration: none;
+    color: #5b5b5b;
+    margin: 0 auto;
+}
+
+.newsmain{
+    display: flex;
+    justify-content: flex-end;
     height: 480px;
     width: 1200px;
-    margin: 40px auto;
+    margin: 50px auto 40px;
+}
+
+.newsmain-l{
+    width: 200px;
+    background-color: #e5e5e5;
+    padding: 40px 20px;
+}
+
+.newsmain-l h2{
+    margin-bottom: 20px;
+    font-weight:bold;
+    font-size: 24px;
+}
+
+.newsmain-r{
+    width:870px;
+    background-image: url("../pic/MIXTAPE.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .games{
     display: flex;
     height: 580px;
-    width: 100vw;
-    margin: 40px auto;
+    /* width: 100vw; */
+    margin-bottom: 40px;
     position: relative;
 }
 
-.gg{
+.gamesswiper{
     position: absolute;
     z-index: 1;
 }
@@ -76,40 +89,32 @@
     margin: auto;
 }
 
-.gb{
+.gamesbackground{
     position: absolute;
     background-color: #1299b7;
+    opacity: .8;
     height: 380px;
-    width: 100vw;
+    width: 100%;
     margin: 100px auto;
 }
 
 .media{
-    display: flex;
-    position: relative;
-    margin: 300px 0 120px 0;
-    height: 760px;
-    width: 1200px;
-    margin: 40px auto;
-    /* overflow: hidden; */
+    margin-top: 160px; 
 }
 
-.media img{
-    /* display: none; */
-    position: absolute;
-    z-index: 1;
-    /* height: 100%; */
-    margin-top: -300px;
-
+.mm{
+    display: flex;
+    position: relative;
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .media h1{
-    /* justify-items: center; */
     z-index: 2;
     width: 1200px;
     position: absolute;
     background-color: #b331d7;
-    margin: 40px auto;
     color: rgb(255, 255, 255);
     font-size: 32px;
     font-weight: bold;
@@ -121,5 +126,12 @@
     width: 1200px;
     display: flex;
     justify-content: space-between;
-    margin: 80px auto;
+    margin: 120px auto;
+}
+
+.media img{
+    max-height: 960px;
+    margin: -800px 0 0 -200px;
+    opacity: .8;
+    pointer-events: none;
 }
