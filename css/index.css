@@ -1,25 +1,14 @@
-html, body {
-    overflow-x: hidden;
-}
-
-.wrapper{
-    background: fixed;
-    background-image: url("../pic/bg.png");
-    background-size: cover;
-	margin: 0 auto;
-    z-index: -2;
-}
-
 .banner{
     width: 1200px;
     height: 450px;
     margin: 40px auto;
 }
 
+
 .news{
     display: flex;
     position: relative;
-    margin: 40px auto;
+    margin-top: 80px;
 }
 
 .news h1{
@@ -41,31 +30,30 @@ html, body {
     margin: 0 auto;
 }
 
-.nm{
+.newsmain{
     display: flex;
     justify-content: flex-end;
     height: 480px;
     width: 1200px;
-    margin: 60px auto 40px;
+    margin: 50px auto 40px;
 }
 
-.nml{
+.newsmain-l{
     width: 200px;
     background-color: #e5e5e5;
     padding: 40px 20px;
 }
 
-.nml h2{
+.newsmain-l h2{
     margin-bottom: 20px;
     font-weight:bold;
     font-size: 24px;
 }
 
-.nmr{
+.newsmain-r{
     width:870px;
-    /* 上去啊啊啊啊啊 */
-    background-image: url("/pic/MIXTAPE.png");
-    background-size: contain;
+    background-image: url("../pic/MIXTAPE.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -73,12 +61,12 @@ html, body {
 .games{
     display: flex;
     height: 580px;
-    width: 100vw;
-    margin: 40px auto;
+    /* width: 100vw; */
+    margin-bottom: 40px;
     position: relative;
 }
 
-.gg{
+.gamesswiper{
     position: absolute;
     z-index: 1;
 }
@@ -101,19 +89,19 @@ html, body {
     margin: auto;
 }
 
-.gb{
+.gamesbackground{
     position: absolute;
     background-color: #1299b7;
     opacity: .8;
     height: 380px;
-    width: 100vw;
+    width: 100%;
     margin: 100px auto;
 }
 
 .media{
-
-    margin-top: 200px; 
+    margin-top: 160px; 
 }
+
 .mm{
     display: flex;
     position: relative;

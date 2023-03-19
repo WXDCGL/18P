@@ -2,13 +2,14 @@
 body{
     font-family: inter, '微軟正黑體';
     line-height: 1.5;
+    color: #5b5b5b;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     height: 80px;
-    width: 100vw;
+    /* width: 100vw; */
     box-shadow: inset 0px -10px 0px 0px rgb(0, 0, 0); 
 
 }
@@ -20,7 +21,7 @@ header{
 }
 
 .top{
-    background-image: url('../pic/menu_bg.png');
+    background-image: url("../pic/menu_bg.png");
     background-position: right;
     background-repeat: no-repeat;
 }
@@ -41,10 +42,6 @@ header{
     margin-left: 1px;
 }
 
-/* .top li:first-child{
-    flex: 1;
-} */
-
 .top a{
     display: block;
     font-family: iceland;
@@ -55,6 +52,12 @@ header{
     text-decoration: none;
     justify-content: center;
 
+}
+
+.top h2:hover{
+    color: #b331d7;
+    /* background-color: #cccccc; */
+    /* border-bottom: 10px solid #000; */
 }
  
 /* 更改繁體中文語系的字體大小 */
@@ -68,22 +71,28 @@ header{
   }
 
 /* -----------inside---------- */
-
+.wrapper{
+    background: fixed;
+    background-image: url("../pic/bg.png");
+    background-size: cover;
+	margin: 0 auto;
+    z-index: -2;
+}
 /* ------------------------ */
 footer{
     margin:  0 auto;
-    width: 100vw;
+    /* width: 100vw; */
     height: 200px;
     background-color: #e5e5e5;
     margin: 0 auto;
 }
 
-.f{
+.foot{
     display: flex;
     margin: 0 360px;
 }
 
-.fm{
+.footmain{
     float: left;
     padding: 20px;
     height: 160px;
@@ -91,7 +100,7 @@ footer{
     margin: auto;
 }
 
-.fm li{
+.footmain li{
     color: #b5b5b5;
     font-size: 16px;
     text-decoration: none;
@@ -106,14 +115,14 @@ footer{
     padding: 0 20px;
 }
 
-.fm a{
+.footmain a{
     color: #b5b5b5;
     font-size: 16px;
     text-decoration: none;
     padding: 0 20px;
 }
 
-.fm a:hover{
+.footmain a:hover{
     display: block;
     background-color: #5b5b5b;
     border-radius: 0.25em;
