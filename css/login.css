@@ -1,14 +1,18 @@
 .login{
-    width: 800px;
-    height: 600px;
+    width: 720px;
+    height: 700px;
+    background-image: url("../pic/login_bg.png");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.3));
     display: flex;
-    background-color: rgba(255, 255, 255, .5);
-    border: 2px solid #b5b5b5;
+    /* background-color: rgba(255, 255, 255, .5); */
+    /* border: 2px solid #b5b5b5; */
     margin: 40px auto 80px;
 }
 
 .login ul{
-    margin: auto;
+    margin: 80px auto;
 }
 
 .login h2{
@@ -16,11 +20,14 @@
     /* font-weight: bold; */
 }
 
-.blank{
+.blank input{
     width: 300px;
     height: 30px;
     background-color: #cccccc;
-    margin-bottom: 40px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: .25rem;
+    font-size: 24px;
 }
 
 .btn1{
@@ -28,10 +35,24 @@
     height: 40px;
     font-size: 24px;
     /* color: #cccccc; */
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .btn{
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.othersign{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-size: 40px;
+    border-top: 1px solid #5b5b5b;
+}
+
+.othersign a{
+    color: #5b5b5b;
 }

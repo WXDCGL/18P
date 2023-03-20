@@ -46,7 +46,9 @@
     .swiper-slide img {
       display: block;
       width: 100%;
+      height: 100%;
       box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+      object-fit: cover;
     }
   </style>
 </head>
@@ -92,6 +94,7 @@
       pagination: {
         el: ".swiper-pagination",
       },
+      loop: true,
     });
   </script>
 </body>
