@@ -1,0 +1,189 @@
+@import url(reset.css);
+body{
+    font-family: inter, '微軟正黑體';
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+header{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 0 20px 0 #5b5b5b;
+    box-sizing: border-box;
+    animation-name: topb;      
+    animation-duration: 3000ms; 
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes topb {
+    0%  { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000) 1; }
+    10% { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000, #000000) 1; }
+    20% { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000, #000000, #ff0000) 1; }
+    30% { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000, #000000, #ff0000, #ff9100) 1; }
+    40% { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00) 1; }
+    50% { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #ff00f2, #ff0000, #000000, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff) 1; }
+    60% { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #ff0000, #000000, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2) 1; }
+    70% { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #000000, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000) 1; }
+    80% { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000) 1; }
+    90% { border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000) 1; }
+    100%{ border-bottom: 2px solid;border-image: linear-gradient(to right bottom, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000) 1; }
+}
+
+.logo img {
+    min-width: 100%;
+    height: 80px;
+
+}
+
+.top{
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.top ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+}
+
+.top li{
+    width: 140px;
+    background-color: #000000;
+    text-align: center;
+    margin-left: 1px;
+    animation-name: myanimation;      
+    animation-duration: 3000ms; 
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.top a{
+    display: block;
+    font-family: iceland;
+    font-size: 24px;
+    /* color: #5b5b5b; */
+    color: #ffffff;
+    line-height: 78px;
+    margin: auto 0;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.top h2:hover{
+    filter: drop-shadow( 0 0 2px rgb(255, 255, 255));
+    background: linear-gradient(to right bottom, #F5CBFF, #B331D7, #1299B7);   
+    animation-name: mainbtn;      
+    animation-duration: 1000ms; 
+    animation-timing-function: ease-in;
+    animation-iteration-count: .1s;
+}
+
+@keyframes mainbtn {
+    0% { background-clip: text; background: linear-gradient(to right bottom, #000000, #000000, #000000); }
+    20% { background-clip: text; background: linear-gradient(to right bottom, #000000, #000000, #F5CBFF); }
+    30% { background-clip: text; background: linear-gradient(to right bottom, #000000, #F5CBFF, #B331D7); }
+    40% { background-clip: text; background: linear-gradient(to right bottom, #F5CBFF, #B331D7, #1299B7); }
+}
+
+ 
+/* 更改繁體中文語系的字體大小 */
+[data-lang="zh-TW"] {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+/* 更改日文語系的字體大小 */
+[data-lang="jp"] {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+/* -----------inside---------- */
+.wrapper{
+    background: fixed;
+	margin: 0 auto;
+    z-index: -2;
+    animation-name: bg1;      
+    animation-duration: 5000ms; 
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes bg1 {
+    0% { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7); }
+    20% { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #1299B7, #F5CBFF); }
+    40% { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #1299B7, #F5CBFF, #B331D7); }
+    60% { background-clip: text; background: linear-gradient(to right top, #B331D7, #1299B7, #F5CBFF, #B331D7, #B331D7,); }
+    80% { background-clip: text; background: linear-gradient(to right top, #1299B7, #F5CBFF, #B331D7, #B331D7, #B331D7); }
+    100% { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7); }
+} 
+
+/* ------------------------ */
+footer{
+    margin:  0 auto;
+    /* width: 100vw; */
+    height: 200px;
+    background-color: #000000;
+    margin: 0 auto;
+}
+
+.foot{
+    display: flex;
+    margin: 0 360px;
+}
+
+.footmain{
+    float: left;
+    padding: 20px;
+    height: 160px;
+    width: auto;
+    margin: auto;
+}
+
+.footmain li{
+    color: #b5b5b5;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.ll{
+    float: left;
+    margin-right: 20px;
+}
+
+.fmli{
+    padding: 0 20px;
+}
+
+.footmain a{
+    color: #b5b5b5;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.footmain a:hover{
+    display: block;
+    background-color: #5b5b5b;
+    border-radius: 0.25em;
+}
+
+span{
+    display: block;
+    background-color: #e5e5e5;
+    color: #b5b5b5;
+    text-align: center;
+    border-top: 1px solid #b5b5b5;
+}
+
+main{
+    background: fixed;
+    background-image: url("../pic/bg_w.png");
+    background-size: cover;
+}
