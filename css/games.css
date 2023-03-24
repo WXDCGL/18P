@@ -1,14 +1,16 @@
 .banner{
-    width: 1200px;
+    width: 900px;
     height: 450px;
-    margin: 40px auto;
+    padding-top: 40px;
+    margin: 0 auto;
 }
 
-/* .games{
+
+.games{
     display: flex;
     position: relative;
-    margin: 40px auto;
-} */
+    margin-top: 40px;
+}
 
 .games h1{
     justify-items: flex-start;
@@ -16,6 +18,7 @@
     z-index: 2;
     color: rgb(255, 255, 255);
     background-color: #b331d7;
+    background: linear-gradient(to right , #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
     width: 50vw;
     font-size: 32px;
     font-weight: bold;
@@ -25,6 +28,7 @@
 
 .gamesmain{
     padding-top: 20px;
+    margin: 0 auto;
 }
 
 .gamesmain ul{
@@ -45,24 +49,27 @@
     display: block;
     width: 540px;
     background-color: rgba(255, 255, 255, .5);
-    /* border-left: 20px solid #f5CBFF; */
-    border: 20px solid #ffffff;
+    padding: 20px;
     border-radius: .2rem;
     margin-bottom: 20px;
     text-decoration: none;
     filter: saturate(0%);
+    transition:all .3s linear
 }
 
 .gamesmain a:hover{
+    padding: 0;
     outline: 4px solid #ffffff;
     border-left: 0;
     margin-bottom: 20px;
     transform: scale(1.1);
+    border: 20px solid #ffffff;
+
     border-left: 20px solid #1299b7;
     border-right: 20px solid #f5CBFF;
     margin-bottom: 20px;
-    transition-duration: .3s;
     filter: saturate(100%);
+    transition-duration: .3s;
 }
 
 .gamesmain img{
@@ -75,15 +82,7 @@
 }
 
 .gamename{
-    background-color: #5b5b5b;
-  
-
-}
-
-.gamename:hover{
     background-color: #b331d7;
-
-
 }
 
 .gamename h2{

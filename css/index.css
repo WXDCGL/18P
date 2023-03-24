@@ -18,7 +18,7 @@
     z-index: 2;
     color: rgb(255, 255, 255);
     background-color: #b331d7;
-    background: linear-gradient(to right , #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
+    background: linear-gradient(to right , #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
     width: 50vw;
     font-size: 32px;
     font-weight: bold;

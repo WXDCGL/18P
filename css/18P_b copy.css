@@ -1,18 +1,44 @@
 @import url(reset.css);
 body{
+    /* background-color: #050505; */
+    /* background: linear-gradient(to right bottom, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000); */
     font-family: inter, '微軟正黑體';
     line-height: 1.5;
     color: #ffffff;
+    /* animation-name: bg1;      
+    animation-duration: 1500ms; 
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite; */
+    
 }
 
 
 @keyframes bg1 {
+    /* 0% { background: linear-gradient(to right top #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2) ; }
+    40% { background: linear-gradient(to right top, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000) ; }
+    60% { background: linear-gradient(to right top, #fffb00, #00ffff, #ff00f2, #ff0000, #ff9100) ; }
+    40% { background: linear-gradient(to right top, #00ffff, #ff00f2, #ff0000, #ff9100, #fffb00) ; }
+    50% { background: linear-gradient(to right top, #ff00f2, #ff0000, #ff9100, #fffb00, #00ffff) ; }
+    60% { background: linear-gradient(to right top, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2) ; }
+    100% { background: linear-gradient(to right top, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2) ; } */
+
     0% { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7); }
     20% { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #1299B7, #F5CBFF); }
     40% { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #1299B7, #F5CBFF, #B331D7); }
     60% { background-clip: text; background: linear-gradient(to right top, #B331D7, #1299B7, #F5CBFF, #B331D7, #B331D7,); }
     80% { background-clip: text; background: linear-gradient(to right top, #1299B7, #F5CBFF, #B331D7, #B331D7, #B331D7); }
     100% { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7); }
+    /* 0%  { background: linear-gradient(to right top, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000) ; }
+    10% { background: linear-gradient(to right top, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000, #000000) ; }
+    20% { background: linear-gradient(to right top, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000, #000000, #ff0000) ; }
+    30% { background: linear-gradient(to right top, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000, #000000, #ff0000, #ff9100) ; }
+    40% { background: linear-gradient(to right top, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00) ; }
+    50% { background: linear-gradient(to right top, #ff00f2, #ff0000, #000000, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff) ; }
+    60% { background: linear-gradient(to right top, #ff0000, #000000, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2) ; }
+    70% { background: linear-gradient(to right top, #000000, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000) ; }
+    80% { background: linear-gradient(to right top, #000000, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000) ; }
+    90% { background: linear-gradient(to right top, #000000, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000) ; }
+    100%{ background: linear-gradient(to right top, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000) ; }*/
 } 
 
 header{
@@ -20,6 +46,10 @@ header{
     display: flex;
     justify-content: space-between;
     height: 80px;
+    /* border-bottom: 10px solid; */
+    /* border-image: linear-gradient(to right, #000000, #ff0000) 1; */
+    /* box-shadow: inset 0px -10px 0px 0px rgb(0, 0, 0);  */
+    /* box-shadow: 0 0 20px 0 #5b5b5b inset; */
     filter:  drop-shadow(0 0 20px #000000);
 
     box-sizing: border-box;
@@ -44,6 +74,7 @@ header{
 }
 
 .logo img {
+    /* display: none; */
     min-width: 100%;
     height: 80px;
 
@@ -77,16 +108,23 @@ header{
     display: block;
     font-family: iceland;
     font-size: 24px;
+    /* color: #5b5b5b; */
     color: #ffffff;
     line-height: 78px;
     margin: auto 0;
     text-decoration: none;
     justify-content: center;
+    /* background: linear-gradient(to right bottom, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000) 1; */
+
 }
 
 .top h2:hover{
     filter: drop-shadow( 0 0 2px rgb(255, 255, 255));
     background: linear-gradient(to right bottom, #F5CBFF, #B331D7, #1299B7);
+    /* background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b); */
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
     
     animation-name: mainbtn;      
     animation-duration: 1000ms; 
@@ -99,6 +137,9 @@ header{
     20% { background-clip: text; background: linear-gradient(to right bottom, #000000, #000000, #F5CBFF); }
     30% { background-clip: text; background: linear-gradient(to right bottom, #000000, #F5CBFF, #B331D7); }
     40% { background-clip: text; background: linear-gradient(to right bottom, #F5CBFF, #B331D7, #1299B7); }
+    /* 10% { background-clip: text; background: linear-gradient(to right bottom, #B331D7, #1299B7, #F5CBFF); }
+    20% { background-clip: text; background: linear-gradient(to right bottom, #1299B7, #F5CBFF, #B331D7); }
+    30% { background-clip: text; background: linear-gradient(to right bottom, #F5CBFF, #B331D7, #1299B7); } */
 }
 
  
@@ -123,8 +164,11 @@ main{
 
 .wrapper{
     background: fixed;
+    /* background-image: url("../pic/bg_b.png"); */
+    /* background-size: cover; */
 	margin: 0 auto;
     z-index: -2;
+    /* background: linear-gradient(to right bottom, #000000, #ff0000, #ff9100, #fffb00, #00ffff, #ff00f2, #ff0000, #000000, #000000, #000000); */
     animation-name: bg1;      
     animation-duration: 5000ms; 
     animation-timing-function: ease-in;
@@ -134,17 +178,15 @@ main{
 /* ------------------------ */
 footer{
     margin:  0 auto;
+    /* width: 100vw; */
     height: 200px;
-    /* background-color: #B331D7; */
+    background-color: #B331D7;
     background-image: url("../pic/Intersect.png");
     background-size: contain;
+    /* opacity: .6; */
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    animation-name: FR;      
-    animation-duration: 3000ms; 
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
 .foot{
@@ -199,7 +241,10 @@ span{
 .foot::before{
     display: block;
     position: relative;
+    /* float: left; */
     content: url(../pic/3piece.png);
+    /* width: 80px;
+    height: 80px; */
     pointer-events: none;
     margin: 20px 0 0 -0px;
     z-index: 0;
@@ -216,6 +261,8 @@ span{
     position: relative;
     rotate: 180deg;
     content: url(../pic/3piece.png);
+    /* width: 80px;
+    height: 80px; */
     pointer-events: none;
     margin: 0px 0 20px 0px;
     z-index: 0;
