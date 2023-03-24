@@ -49,7 +49,9 @@ header{
     /* border-bottom: 10px solid; */
     /* border-image: linear-gradient(to right, #000000, #ff0000) 1; */
     /* box-shadow: inset 0px -10px 0px 0px rgb(0, 0, 0);  */
-    box-shadow: 0 0 20px 0 #5b5b5b;
+    /* box-shadow: 0 0 20px 0 #5b5b5b inset; */
+    filter:  drop-shadow(0 0 20px #000000);
+
     box-sizing: border-box;
     animation-name: topb;      
     animation-duration: 3000ms; 
@@ -154,6 +156,12 @@ header{
   }
 
 /* -----------inside---------- */
+main{
+    background: fixed;
+    background-image: url("../pic/Group\ 54\ 1.png");
+    background-size: cover;
+}
+
 .wrapper{
     background: fixed;
     /* background-image: url("../pic/bg_b.png"); */
@@ -174,6 +182,8 @@ footer{
     height: 200px;
     background-color: #000000;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .foot{
@@ -213,20 +223,38 @@ footer{
 
 .footmain a:hover{
     display: block;
-    background-color: #5b5b5b;
+    background-color: #B331D7;
     border-radius: 0.25em;
 }
 
 span{
     display: block;
-    background-color: #e5e5e5;
+    background-color: #000000;
     color: #b5b5b5;
     text-align: center;
     border-top: 1px solid #b5b5b5;
 }
 
-main{
-    background: fixed;
-    background-image: url("../pic/Group\ 54\ 1.png");
-    background-size: cover;
+.foot::before{
+    display: block;
+    position: relative;
+    /* float: left; */
+    content: url(../pic/3piece.png);
+    /* width: 80px;
+    height: 80px; */
+    pointer-events: none;
+    margin: 20px 0 0 -0px;
+    z-index: 0;
+    opacity: .8;
+    filter:  drop-shadow(0px 0px 4px rgb(228, 118, 255));
+    animation-name: FR;      
+    animation-duration: 3000ms; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes FR {
+    0% {  filter:  drop-shadow(0px 0px 4px rgb(228, 118, 255));}
+    50% {  filter:  drop-shadow(0px 0px 4px rgb(18, 153, 183));}
+    100%{ filter:  drop-shadow(0px 0px 4px rgb(228, 118, 255));}
 }

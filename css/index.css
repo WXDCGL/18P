@@ -1,5 +1,5 @@
 .banner{
-    width: 1200px;
+    width: 900px;
     height: 450px;
     padding-top: 40px;
     margin: 0 auto;
@@ -9,7 +9,7 @@
 .news{
     display: flex;
     position: relative;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .news h1{
@@ -18,6 +18,7 @@
     z-index: 2;
     color: rgb(255, 255, 255);
     background-color: #b331d7;
+    background: linear-gradient(to right , #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
     width: 50vw;
     font-size: 32px;
     font-weight: bold;
@@ -78,6 +79,7 @@
     z-index: 2;
     color: rgb(255, 255, 255);
     background-color: #b331d7;
+    background: linear-gradient(to left, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
     width: 50vw;
     font-size: 32px;
     font-weight: bold;
@@ -93,14 +95,18 @@
 .gamesbackground{
     position: absolute;
     background-color: #1299b7;
-    opacity: .8;
+    background: linear-gradient(to right, rgba(245, 203,255,0), #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
+    opacity: .6;
     height: 380px;
     width: 100%;
     margin: 100px auto;
+    filter:  drop-shadow(0 0 4px rgb(228, 118, 255));
+
 }
 
 .media{
-    margin-top: 160px; 
+    margin-top: 280px; 
+    padding-bottom: 100px;
 }
 
 .mm{
@@ -112,10 +118,10 @@
 }
 
 .media h1{
-    z-index: 2;
     width: 1200px;
     position: absolute;
     background-color: #b331d7;
+    background: linear-gradient(to right, rgba(245, 203,255,0), #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
     color: rgb(255, 255, 255);
     font-size: 32px;
     font-weight: bold;
@@ -128,6 +134,12 @@
     display: flex;
     justify-content: space-between;
     margin: 120px auto;
+    
+}
+
+.mov iframe{
+    position: relative;
+    z-index: 2;
 }
 
 .media img{
@@ -135,4 +147,53 @@
     margin: -800px 0 0 -200px;
     opacity: .8;
     pointer-events: none;
+}
+
+.media h1::before{
+    display: block;
+    position: relative;
+    float: left;
+    content: url(../pic/G.REX_top.png);
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    margin: -320px 0 0 -190px;
+    z-index: 1;
+    opacity: .8;
+    filter:  drop-shadow(4px 4px 4px rgb(12, 186, 255));
+    animation-name: XX;      
+    animation-duration: 1000ms; 
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes XX {
+    0%  { transform: translate(0, 0); }
+    30% { transform: translate(0, 50px) rotate(5deg); }
+    100%{ transform: translate(0, 0); }
+}
+
+.rex_bottom::before{
+    display: block;
+    position: relative;
+    float: left;
+    content: url(../pic/G.REX_bottom.png);
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    margin: -370px 0 0 -580px;
+    z-index: 0;
+    opacity: .8;
+    filter:  drop-shadow(4px 4px 4px rgb(228, 118, 255));
+
+    animation-name: XX2;      
+    animation-duration: 1000ms; 
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes XX2 {
+    0%  { transform: translate(0, 0); }
+    30% { transform: translate(0, -50px) rotate(-5deg); }
+    100%{ transform: translate(0, 0); }
 }
