@@ -29,6 +29,8 @@
 
 .newsmain{
     display: flex;
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
 .newsmain ul{

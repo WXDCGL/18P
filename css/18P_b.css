@@ -146,6 +146,7 @@ footer{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     line-height: 24px;
+    /* position: relative; */
 }
 
 .foot{
@@ -159,7 +160,7 @@ footer{
     height: 160px;
     width: auto;
     margin: auto;
-    background-color: rgba(53, 140, 175, 0.2);
+    /* background-color: rgba(53, 140, 175, 0.2); */
 }
 
 .footmain li{

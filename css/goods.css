@@ -1,7 +1,15 @@
 .banner{
-    width: 1200px;
+    width: 900px;
     height: 450px;
-    margin: 40px auto;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+
+.goods{
+    display: flex;
+    position: relative;
+    margin-top: 40px;
 }
 
 .goods h1{
@@ -10,11 +18,13 @@
     z-index: 2;
     color: rgb(255, 255, 255);
     background-color: #b331d7;
+    background: linear-gradient(to right , #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
     width: 50vw;
     font-size: 32px;
     font-weight: bold;
     line-height: 70px;
     text-align: center;
+    text-shadow: 3px 3px 6px #000001;
 }
 
 .goodsmain{
