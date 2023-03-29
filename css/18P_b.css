@@ -145,6 +145,7 @@ footer{
     animation-duration: 3000ms; 
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    line-height: 24px;
 }
 
 .foot{
@@ -158,12 +159,17 @@ footer{
     height: 160px;
     width: auto;
     margin: auto;
+    background-color: rgba(53, 140, 175, 0.2);
 }
 
 .footmain li{
     color: #b5b5b5;
     font-size: 16px;
     text-decoration: none;
+    background-color: rgba(91, 91, 91, 0.6);
+    border-radius: .5rem;
+    margin: 2px;
+    border: 1px solid #5b5b5b;
 }
 
 .ll{
@@ -176,6 +182,7 @@ footer{
 }
 
 .footmain a{
+    display: block;
     color: #b5b5b5;
     font-size: 16px;
     text-decoration: none;
@@ -183,9 +190,9 @@ footer{
 }
 
 .footmain a:hover{
-    display: block;
     background-color: #B331D7;
     border-radius: 0.25em;
+    color: #FFF;
 }
 
 span{
@@ -196,7 +203,7 @@ span{
     border-top: 1px solid #b5b5b5;
 }
 
-.foot::before{
+/* .foot::before{
     display: block;
     position: relative;
     content: url(../pic/3piece.png);
@@ -225,10 +232,10 @@ span{
     animation-duration: 3000ms; 
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
+}*/
 
 @keyframes FR {
     0% {  filter:  drop-shadow(0px 0px 4px rgb(228, 118, 255));}
     50% {  filter:  drop-shadow(0px 0px 4px rgb(18, 153, 183));}
     100%{ filter:  drop-shadow(0px 0px 4px rgb(228, 118, 255));}
-}
+} 

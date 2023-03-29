@@ -51,7 +51,7 @@
 
 .goodsmain a:hover{
     /* background-color: #30268d; */
-    transform: scale(1.5) translate(0, 50px);
+    transform: scale(1.1) translate(0, 0px);
     transition-duration: .3s;
 }
 
