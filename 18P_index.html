@@ -80,15 +80,35 @@
                 <h1 data-lang="en">NEWS</h1>
                 <h1 data-lang="zh-TW">最新消息</h1>
                 <h1 data-lang="jp">ニュース</h1>
-                <a href="https://www.ea.com/games/apex-legends/news/imperial-guard-collection-event?isLocalized=true" target="_blank">
-                    <ul class="newsmain">
-                        <li class="newsmain-l">
+                <ul class="newsmain">
+                    <div class="panel-group">
+                        <input type="radio" name="panel-radio" id="radio1" class="panel-control" checked>
+                        <input type="radio" name="panel-radio" id="radio2" class="panel-control">
+                        <input type="radio" name="panel-radio" id="radio3" class="panel-control">
+                    <li class="newsmain-l">
+                        <label for="radio1" class="active">
                             <h2>MIXTAPE</h2>
-                            <p>The festivities for the 4th Anniversary of Apex Legends continues with the launch of the Imperial Guard Collection Event! Say hello to Mixtape: a permanent playlist featuring a rotation of Team Deathmatch, Control, and Gun Run! It’s the perfect way to take a break from Battle Royale and hone your skills in new ways.</p>
-                        </li>
-                        <li class="newsmain-r"></li>
-                    </ul>
-                </a>
+                            <!-- <p>The festivities for the 4th Anniversary of Apex Legends continues with the launch of the Imperial Guard Collection Event! Say hello to Mixtape: a permanent playlist featuring a rotation of Team Deathmatch, Control, and Gun Run! It’s the perfect way to take a break from Battle Royale and hone your skills in new ways.</p>     -->
+                        </label>
+                        <label for="radio2">
+                            <h2>BBBBB</h2>
+                        </label>
+                        <label for="radio3">
+                            <h2>CCCCCC</h2>
+                        </label>
+                    </li>
+                    <li class="newsmain-r">
+                        <a href="#" class="content content1" >
+                            <img src="./pic/MIXTAPE.png" alt="">
+                        </a> 
+                        <a href="#" class="content content2" >
+                            <img src="./pic/banner/b01.jpg" alt="">
+                        </a> 
+                        <a href="#" class="content content3" >
+                            <img src="./pic/banner/b03.jpg" alt="">
+                        </a> 
+                    </li>
+                </ul>
             </div>
 
             <div class="games">
@@ -203,7 +223,16 @@
             <span>Copyright © 本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。</span>
         </footer>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            let is_open = 0;
+            $('.top').slideUp()
+            $('header').click(function(){
+                $('.top').slideToggle();
+            })
+        })
+    </script>
     <script>
         function changeLanguage(lang) {
             var elements = document.querySelectorAll('[data-lang]');

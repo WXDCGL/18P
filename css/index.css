@@ -10,6 +10,7 @@
     display: flex;
     position: relative;
     margin-top: 40px;
+    color: #5b5b5b;
 }
 
 .news h1{
@@ -28,12 +29,6 @@
     /* filter: drop-shadow(0px 5px 10px #5b5b5b); */
 }
 
-.news a{
-    text-decoration: none;
-    color: #5b5b5b;
-    margin: 0 auto;
-}
-
 .newsmain{
     display: flex;
     justify-content: flex-end;
@@ -42,25 +37,60 @@
     margin: 50px auto 40px;
 }
 
+.panel-control {
+    position:absolute;
+    opacity:0;
+  }
+
 .newsmain-l{
-    width: 200px;
-    background-color: #e5e5e5;
-    padding: 40px 20px;
+    width: 250px;
+}
+
+.newsmain-l label{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(91, 91, 91, 0.6);
 }
 
 .newsmain-l h2{
-    margin-bottom: 20px;
     font-weight:bold;
     font-size: 24px;
 }
 
-.newsmain-r{
-    width:870px;
-    background-image: url("../pic/MIXTAPE.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.news a{
+    text-decoration: none;
+    margin: 0 auto;
 }
+
+.newsmain-l label {
+    display:block;
+    padding: 10px 30px;
+    border:1px solid #ccc;
+    border-bottom:none;
+    background-color: #ccc;
+    bottom:-1px;
+    position:relative;
+}
+
+.newsmain-r {
+    width:750px;
+}
+
+.newsmain-r img{
+    width:800px;
+    height: 100%;
+    object-fit: fill;
+} 
+
+.content{display:none;}
+
+#radio1:checked ~ .newsmain-l [for="radio1"],
+#radio2:checked ~ .newsmain-l [for="radio2"],
+#radio3:checked ~ .newsmain-l [for="radio3"]{background-color: #fff;}
+    
+#radio1:checked ~ .newsmain-r .content1,
+#radio2:checked ~ .newsmain-r .content2,
+#radio3:checked ~ .newsmain-r .content3 {display:block}
 
 .games{
     display: flex;
