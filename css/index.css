@@ -32,9 +32,10 @@
 .newsmain{
     display: flex;
     justify-content: flex-end;
-    height: 480px;
-    width: 1200px;
-    margin: 50px auto 40px;
+    /* height: 480px; */
+    /* width: 1200px; */
+    margin: 80px auto 40px;
+    background-color: #fff;
 }
 
 .newsmain input{
@@ -43,13 +44,25 @@
   }
 
 .newsmain-l{
-    width: 250px;
+    width: 300px;
+    border: 1px solid #fff;
+
+    /* background-color: #5b5b5b; */
+
 }
 
 .newsmain-l label{
-    margin-top: 20px;
-    padding: 20px;
+    margin-bottom: 1px;
     background-color: rgba(91, 91, 91, 0.6);
+    
+    display:block;
+    padding: 10px 30px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background-color: #5b5b5b;
+    position:relative;
+    word-wrap: break-word;
+    cursor: pointer;
 }
 
 .newsmain-l h2{
@@ -57,41 +70,46 @@
     font-size: 24px;
 }
 
+.newsmain-l p{
+    display: block;
+}
+
 .news a{
     text-decoration: none;
     margin: 0 auto;
 }
 
-.newsmain-l label {
-    display:block;
-    padding: 10px 30px;
-    border:1px solid #ccc;
-    border-bottom:none;
-    background-color: #ccc;
-    bottom:-1px;
-    position:relative;
-}
-
 .newsmain-r {
-    width:750px;
+    width:800px;
+    border: 1px solid #fff;
+    /* background-color: #fff; */
+}
+.newsmain-r a{
+    width: 800px;
+    height: 100%;
 }
 
 .newsmain-r img{
-    width:800px;
-    height: 100%;
-    object-fit: fill;
+    display: block;
+    width:100%;
+    /* height: 100%; */
+    object-fit: contain;
+    margin: auto;
 } 
 
 .content{display:none;}
 
 #radio1:checked ~ .newsmain-l [for="radio1"],
 #radio2:checked ~ .newsmain-l [for="radio2"],
-#radio3:checked ~ .newsmain-l [for="radio3"]{background-color: #fff;}
+#radio3:checked ~ .newsmain-l [for="radio3"]{color: #5b5b5b; background-color: #fff;}
     
 #radio1:checked ~ .newsmain-r .content1,
 #radio2:checked ~ .newsmain-r .content2,
 #radio3:checked ~ .newsmain-r .content3 {display:block}
 
+#radio1:checked ~ .newsmain-l p,
+#radio2:checked ~ .newsmain-l p,
+#radio3:checked ~ .newsmain-l p {display:block}
 .games{
     display: flex;
     height: 580px;

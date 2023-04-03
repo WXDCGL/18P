@@ -1,24 +1,104 @@
 .support{
-    /* width: 1200px;
-    height: 700px; */
-    width: 700px;
-    height: 300px;
-    margin: 0 auto;
     display: flex;
     position: relative;
-    margin: 0 auto;
-    padding-top: 300px;
+    margin-top: 40px;
+    color: #5b5b5b;
 }
 
-h1{
+.support h1{
     justify-items: flex-start;
     position: absolute;
     z-index: 2;
     color: rgb(255, 255, 255);
     background-color: #b331d7;
+    background: linear-gradient(to right , #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
     width: 50vw;
     font-size: 32px;
     font-weight: bold;
     line-height: 70px;
     text-align: center;
+    text-shadow: 3px 3px 6px #000001;
+    /* filter: drop-shadow(0px 5px 10px #5b5b5b); */
 }
+
+.supportmain{
+    display: flex;
+    justify-content: flex-end;
+    /* height: 480px; */
+    /* width: 1200px; */
+    margin: 80px auto 40px;
+    background-color: #fff;
+}
+
+.supportmain input{
+    position:absolute;
+    opacity:0;
+  }
+
+.supportmain-l{
+    width: 300px;
+    border: 1px solid #fff;
+
+    /* background-color: #5b5b5b; */
+
+}
+
+.supportmain-l label{
+    margin-bottom: 1px;
+    background-color: rgba(91, 91, 91, 0.6);
+    
+    display:block;
+    padding: 10px 30px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background-color: #5b5b5b;
+    position:relative;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.supportmain-l h2{
+    font-weight:bold;
+    font-size: 24px;
+}
+
+.supportmain-l p{
+    display: block;
+}
+
+.support a{
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.supportmain-r {
+    width:800px;
+    border: 1px solid #fff;
+    /* background-color: #fff; */
+}
+.supportmain-r a{
+    width: 800px;
+    height: 100%;
+}
+
+.supportmain-r img{
+    display: block;
+    width:100%;
+    /* height: 100%; */
+    object-fit: contain;
+    margin: auto;
+} 
+
+.content{display:none;}
+
+#radio1:checked ~ .supportmain-l [for="radio1"],
+#radio2:checked ~ .supportmain-l [for="radio2"],
+#radio3:checked ~ .supportmain-l [for="radio3"]{color: #5b5b5b; background-color: #fff;}
+    
+#radio1:checked ~ .supportmain-r .content1,
+#radio2:checked ~ .supportmain-r .content2,
+#radio3:checked ~ .supportmain-r .content3 {display:block}
+
+#radio1:checked ~ .supportmain-l p,
+#radio2:checked ~ .supportmain-l p,
+#radio3:checked ~ .supportmain-l p {display:block}
