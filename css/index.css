@@ -148,9 +148,9 @@
     background-color: #1299b7;
     background: linear-gradient(to right, rgba(245, 203,255,0), #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
     opacity: .6;
-    height: 380px;
+    height: 300px;
     width: 100%;
-    margin: 100px auto;
+    margin: 140px auto;
     filter:  drop-shadow(0 0 4px rgb(228, 118, 255));
 
 }
