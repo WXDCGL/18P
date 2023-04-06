@@ -95,7 +95,3 @@
 #radio1:checked ~ .supportmain-r .content1,
 #radio2:checked ~ .supportmain-r .content2,
 #radio3:checked ~ .supportmain-r .content3 {display:block}
-
-#radio1:checked ~ .supportmain-l p,
-#radio2:checked ~ .supportmain-l p,
-#radio3:checked ~ .supportmain-l p {display:block}

@@ -11,19 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inter:wght@400;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="icon" href="">
-    <link rel="icon" href="./pic/G.REX.ico" type="image/x-icon" / >
+    <link rel="icon" href="./pic/G.REX.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/18P_b.css">
     <link rel="stylesheet" href="css/index.css">
 
     <title>G.REX</title>
 </head>
 <body>
-    <!-- <select id="lang-select" onchange="changeLanguage(this.value)">
-        <option value="en" selected>English</option>
-        <option value="zh-TW">繁體中文</option>
-      </select>
-  
-      <script src="your-script.js"></script> -->
     <header>
         <div class="logo">
             <a href="18P_index.html">
@@ -88,17 +82,23 @@
                     
                     <li class="newsmain-l">
                         <label for="radio1" class="active">
-                            <h2>MIXTAPE</h2>
-                            <p>The festivities for the 4th Anniversary of Apex Legends continues with the launch of the Imperial Guard Collection Event! Say hello to Mixtape: a permanent playlist featuring a rotation of Team Deathmatch, Control, and Gun Run! It’s the perfect way to take a break from Battle Royale and hone your skills in new ways.</p>    
+                            <h2 data-lang="en"   >MIXTAPE</h2>
+                            <h2 data-lang="zh-TW">混和模式</h2>
+                            <h2 data-lang="jp"   >ミックステープ</h2>
+                            <p data-lang="en" class="label-p">The festivities for the 4th Anniversary of Apex Legends continues with the launch of the Imperial Guard Collection Event! Say hello to Mixtape: a permanent playlist featuring a rotation of Team Deathmatch, Control, and Gun Run! It’s the perfect way to take a break from Battle Royale and hone your skills in new ways.</p>    
+                            <p data-lang="zh-TW" class="label-p">讓皇室守衛收藏活動延續《Apex 英雄》4 週年慶的活動！隆重介紹混合模式：這是個在團隊死鬥、控制與快速直擊間輪替的永久遊戲列表！暫時離開大逃殺，透過全新方式磨練你的技術。</p>    
+                            <p data-lang="jp" class="label-p">「エーペックスレジェンズ」４周年記念イベントは、インペリアルガード コレクションイベントでさらに盛り上がりを見せます！ 常設プレイリストのミックステープではチームデスマッチ、コントロール、ガンゲームが入れ替わりで楽しめます！ バトルロイヤルとは趣向の違うプレイが楽しめ、これまでにない方法で腕を磨くこともできる充実の機能と言えるでしょう。</p>    
                         </label>
                         <label for="radio2">
                             <h2>BBBBBB</h2>
-                            <p>The festivities for the 4th Anniversary of Apex Legends continues with the launch of the Imperial Guard Collection Event! Say hello to Mixtape: a permanent playlist featuring a rotation of Team Deathmatch, Control, and Gun Run! It’s the perfect way to take a break from Battle Royale and hone your skills in new ways.</p>    
+                            <p data-lang="en" class="label-p">The festivities for the 4th Anniversary of Apex Legends continues with the launch of the Imperial Guard Collection Event! Say hello to Mixtape: a permanent playlist featuring a rotation of Team Deathmatch, Control, and Gun Run! It’s the perfect way to take a break from Battle Royale and hone your skills in new ways.</p>    
+                            <p data-lang="zh-TW" class="label-p">讓皇室守衛收藏活動延續《Apex 英雄》4 週年慶的活動！隆重介紹混合模式：這是個在團隊死鬥、控制與快速直擊間輪替的永久遊戲列表！暫時離開大逃殺，透過全新方式磨練你的技術。</p>    
+                            <p data-lang="jp" class="label-p">「エーペックスレジェンズ」４周年記念イベントは、インペリアルガード コレクションイベントでさらに盛り上がりを見せます！ 常設プレイリストのミックステープではチームデスマッチ、コントロール、ガンゲームが入れ替わりで楽しめます！ バトルロイヤルとは趣向の違うプレイが楽しめ、これまでにない方法で腕を磨くこともできる充実の機能と言えるでしょう。</p>   
 
                         </label>
                         <label for="radio3">
                             <h2>CCCCCC</h2>
-                            <P>UKJKPPP</P>
+                            <P class="label-p">UKJKPPP</P>
                         </label>
                     </li>
                     
@@ -142,7 +142,6 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <img src="pic/Group 47.png" alt="">         -->
             </div>
 
         </main>
@@ -208,9 +207,6 @@
                                   </select>
                               
                                   <script src="your-script.js"></script>
-                                <!-- <li><a class="ll" href="EN">EN</a></li>
-                                <li><a class="ll" href="ZH">ZH</a></li>
-                                <li><a class="ll" href="JP">JP</a></li> -->
                             </ul>
                         </li>   
                     </ul>
@@ -229,8 +225,19 @@
             <span>Copyright © 本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。</span>
         </footer>
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
+    </head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>//news
+        $(function() {
+            $('.newsmain li label').on('click', function() {
+            // 隱藏所有的 p.label-p 元素
+            $('p.label-p').hide();
+            // 顯示與選中的 radio 對應的 p.label-p 元素
+            $(this).find('p.label-p').show();
+            });
+        });
+    </script>
+    <!-- <script>
         $(function(){
             let is_open = 0;
             $('.top').slideUp()
@@ -239,7 +246,7 @@
             })
         })
     </script> -->
-    <script>
+    <script>//語系
         function changeLanguage(lang) {
             var elements = document.querySelectorAll('[data-lang]');
             for (var i = 0; i < elements.length; i++) {
@@ -260,5 +267,6 @@
         document.getElementById('lang-select').value = lang;
         changeLanguage(lang);
     </script>
+    
 </body>
 </html>

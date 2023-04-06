@@ -70,9 +70,9 @@
     font-size: 24px;
 }
 
-.newsmain-l p{
-    display: block;
-}
+/* .label-p{
+    display: none;
+} */
 
 .news a{
     text-decoration: none;
@@ -107,9 +107,7 @@
 #radio2:checked ~ .newsmain-r .content2,
 #radio3:checked ~ .newsmain-r .content3 {display:block}
 
-#radio1:checked ~ .newsmain-l p,
-#radio2:checked ~ .newsmain-l p,
-#radio3:checked ~ .newsmain-l p {display:block}
+
 .games{
     display: flex;
     height: 580px;
