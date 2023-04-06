@@ -5,16 +5,6 @@ body{
     color: #ffffff;
 }
 
-
-@keyframes bg1 {
-    0% { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7); }
-    20% { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #1299B7, #F5CBFF); }
-    40% { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #1299B7, #F5CBFF, #B331D7); }
-    60% { background-clip: text; background: linear-gradient(to right top, #B331D7, #1299B7, #F5CBFF, #B331D7, #B331D7,); }
-    80% { background-clip: text; background: linear-gradient(to right top, #1299B7, #F5CBFF, #B331D7, #B331D7, #B331D7); }
-    100% { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7); }
-} 
-
 header{
     background-color: #000000;
     display: flex;
@@ -46,7 +36,6 @@ header{
 .logo img {
     min-width: 100%;
     height: 80px;
-
 }
 
 .top{
@@ -127,10 +116,22 @@ main{
     z-index: -2;
     animation-name: bg1;      
     animation-duration: 5000ms; 
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(.21,.86,.72,.18);
     animation-iteration-count: infinite;
-    
 }
+
+@keyframes bg1 {
+    0%   { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7); }
+    10%  { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF); }
+    20%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF); }
+    40%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7); }
+    50%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7); }
+    60%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7); }
+    70%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7); }
+    80%  { background-clip: text; background: linear-gradient(to right top, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7); }
+    90%  { background-clip: text; background: linear-gradient(to right top, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7); }
+    100% { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7); }
+} 
 /* ------------------------ */
 footer{
     margin:  0 auto;
@@ -216,10 +217,22 @@ span{
         background-image: url("../pic/bg_b_pad.png");
         background-size: cover;
     }
+    .top ul{
+        flex-direction: column;
+        /* position: absolute;
+        z-index: 5; */
+    }
+    footer{
+        display: none;
+    }
 }
 
 /* ---------------------------- */
 @media screen and (max-width: 414px) {
+    .logo img {
+        /* width: 10%; */
+        height: 80px;
+    }
     main{
         background: fixed;
         background-image: url("../pic/Intersect.png");

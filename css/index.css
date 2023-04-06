@@ -44,19 +44,23 @@
   }
 
 .newsmain-l{
+    display: flex;
     width: 300px;
     border: 1px solid #fff;
+    flex-direction: column;
+
 
     /* background-color: #5b5b5b; */
 
 }
 
 .newsmain-l label{
+    flex-grow: 3;
     margin-bottom: 1px;
     background-color: rgba(91, 91, 91, 0.6);
     
     display:block;
-    padding: 10px 30px;
+    padding: 20px 30px;
     border-bottom: 1px solid #fff;
     color: #fff;
     background-color: #5b5b5b;
@@ -68,11 +72,9 @@
 .newsmain-l h2{
     font-weight:bold;
     font-size: 24px;
+    margin-top: 35px;
+    
 }
-
-/* .label-p{
-    display: none;
-} */
 
 .news a{
     text-decoration: none;
@@ -82,17 +84,11 @@
 .newsmain-r {
     width:800px;
     border: 1px solid #fff;
-    /* background-color: #fff; */
-}
-.newsmain-r a{
-    width: 800px;
-    height: 100%;
 }
 
 .newsmain-r img{
     display: block;
     width:100%;
-    /* height: 100%; */
     object-fit: contain;
     margin: auto;
 } 
@@ -180,7 +176,7 @@
 }
 
 .media ul{
-    width: 50vw;
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     margin: 120px auto;
@@ -252,22 +248,70 @@
 /* ---------------------------- */
 @media screen and (max-width: 820px) {
     body{
-        width: 100%;
+        width: 100vw;
     }
     .banner{
         display: none;
     }
+    .newsmain{
+        width: 100vw;
+        /* display: block; */
+        flex-direction: column;
+    }
+    .newsmain-l{
+        width: 100vw;
+        flex-direction: column;
+    }
+    .newsmain-l label{
+        margin-bottom: 0;
+        padding: 2px;
+    }
+
+    .newsmain-l h2{
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .newsmain-r{
+        width: 100vw;
+    }
+    .games{
+        height: 500px;
+    }
+    .games ul{
+        display: none;
+    }
+    .games h1{
+        position: absolute;
+        justify-items: flex-start;
+        align-self: self-start;
+        background: linear-gradient(to right , #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
+    }
+    .gamesbackground{
+        /* margin: 100px auto; */
+    }
+    .media{
+        margin-top: 0;
+    }
+    .media h1{
+        width: 100vw;
+    }
     .media h1::before{
         display: none;
+    }
+    .mm{
+        width: 100vw;
+    }
+    .media ul{
+        flex-wrap: wrap;
+    }
+    .media iframe{
+        width: 100vw;
     }
     .rex_bottom::before{
         display: none;
     }
-    .mov{
-        list-style: none;
-        justify-self: start;
-    }
-    
+
 }
 
 /* ---------------------------- */
