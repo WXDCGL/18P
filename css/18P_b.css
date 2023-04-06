@@ -219,8 +219,13 @@ span{
     }
     .top ul{
         flex-direction: column;
-        /* position: absolute;
-        z-index: 5; */
+        position: absolute;
+        z-index: 5;
+        left: 200px;
+    }
+    .top li{
+        margin-right: 1px;
+        margin-bottom: 1px;
     }
     footer{
         display: none;
@@ -230,8 +235,13 @@ span{
 /* ---------------------------- */
 @media screen and (max-width: 414px) {
     .logo img {
-        /* width: 10%; */
         height: 80px;
+    }
+    .top ul{
+        left: 233px;
+    }
+    .top a{
+        line-height: 30px;
     }
     main{
         background: fixed;

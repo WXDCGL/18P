@@ -222,6 +222,25 @@
         
     </div>
 
+    
+    <script>
+        $(function(){
+        let img = $('.logo img');
+            if (window.innerWidth < 414) {
+                img.attr('src', './pic/G.REX.png');
+            }
+        });
+
+        $(function(){
+            let is_open = 0;
+            $('.top').slideUp()
+            $('header').click(function(){
+                if ($(window).width() < 820) {
+                    $('.top').slideToggle();
+                }
+            })
+        })
+    </script>
     <script>
         function changeLanguage(lang) {
             var elements = document.querySelectorAll('[data-lang]');

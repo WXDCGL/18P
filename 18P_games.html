@@ -206,7 +206,25 @@
             <span>Copyright © 本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。</span>
         </footer>
     </div>
+    
+    <script>
+        $(function(){
+        let img = $('.logo img');
+            if (window.innerWidth < 414) {
+                img.attr('src', './pic/G.REX.png');
+            }
+        });
 
+        $(function(){
+            let is_open = 0;
+            $('.top').slideUp()
+            $('header').click(function(){
+                if ($(window).width() < 820) {
+                    $('.top').slideToggle();
+                }
+            })
+        })
+    </script>
     <script>
         function changeLanguage(lang) {
             var elements = document.querySelectorAll('[data-lang]');
