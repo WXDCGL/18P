@@ -221,7 +221,8 @@ span{
         flex-direction: column;
         position: absolute;
         z-index: 5;
-        left: 200px;
+        right: 0;
+        top: 0;
     }
     .top li{
         margin-right: 1px;
@@ -238,7 +239,7 @@ span{
         height: 80px;
     }
     .top ul{
-        left: 233px;
+        /* left: 233px; */
     }
     .top a{
         line-height: 30px;

@@ -243,8 +243,11 @@
             let is_open = 0;
             $('.top').slideUp()
             $('header').click(function(){
-                if ($(window).width() < 820) {
+                if ($(window).width() < 768 && !$('.top').hasClass('is-open')) {
                     $('.top').slideToggle();
+                    $('.top').addClass('is-open');
+                } else {
+                    $('.top').removeClass('is-open');
                 }
             })
         })
