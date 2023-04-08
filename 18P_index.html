@@ -150,7 +150,7 @@
         </main>
         <footer>
             <ul class="foot">
-                <li class="footmain">
+                <li class="footmain" id="footmain1">
                     <ul>
                         <li><a href="./18P_news.html">
                             <p data-lang="en">EVEN</p>
@@ -232,25 +232,28 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
-        $(function(){
-        let img = $('.logo img');
+        $(document).ready(function() {
+            if ($(window).width() < 414) {
+                $('.top').slideUp();
+            }
+
+            $('header').click(function() {
+                if ($(window).width() < 414) {
+                $('.top').slideToggle();
+                }
+            });
+
+            $(window).resize(function() {
+                if ($(window).width() >= 414) {
+                $('.top').removeAttr('style');
+                }
+            });
+
+            let img = $('.logo img');
             if (window.innerWidth < 414) {
                 img.attr('src', './pic/G.REX.png');
             }
         });
-
-        $(function(){
-            let is_open = 0;
-            $('.top').slideUp()
-            $('header').click(function(){
-                if ($(window).width() < 768 && !$('.top').hasClass('is-open')) {
-                    $('.top').slideToggle();
-                    $('.top').addClass('is-open');
-                } else {
-                    $('.top').removeClass('is-open');
-                }
-            })
-        })
     </script>
     <script>//語系
         function changeLanguage(lang) {

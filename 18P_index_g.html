@@ -77,6 +77,35 @@
       <div class="swiper-slide">
         <img src="pic/games/cod.jpg" />
       </div>
+      <div class="swiper-slide">
+        <img src="pic/games/CSGO.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="pic/games/LOL.jpg" />
+      </div>
+
+      <div class="swiper-slide">
+        <img src="pic/games/street fighter.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="pic/games/star craft2.jpg" />
+
+      </div>
+      <div class="swiper-slide">
+        <img src="pic/games/RAINBOWSIX.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="pic/games/ow2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="pic/games/cod.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="pic/games/CSGO.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="pic/games/LOL.jpg" />
+      </div>
 
     </div>
     <div class="swiper-pagination"></div>
@@ -85,13 +114,18 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+  <script>
+    window.addEventListener('resize', function() {
+  // 更新Swiper选项
+    });
+  </script>
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: "auto",
+      slidesPerView: 4,
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
@@ -102,9 +136,16 @@
       pagination: {
         el: ".swiper-pagination",
       },
-      loop: 'auto',
+      loop: 'true',
 
-
+    });
+    window.addEventListener('resize', function() {
+      if (window.innerWidth < 414) {
+        swiper.params.slidesPerView = 1;
+      } else {
+        swiper.params.slidesPerView = 4;
+      }
+      swiper.update();
     });
   </script>
 </body>
