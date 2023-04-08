@@ -233,18 +233,18 @@
 
     <script>
         $(document).ready(function() {
-            if ($(window).width() < 414) {
+            if ($(window).width() < 1000) {
                 $('.top').slideUp();
             }
 
             $('header').click(function() {
-                if ($(window).width() < 414) {
+                if ($(window).width() < 1000) {
                 $('.top').slideToggle();
                 }
             });
 
             $(window).resize(function() {
-                if ($(window).width() >= 414) {
+                if ($(window).width() >= 1000) {
                 $('.top').removeAttr('style');
                 }
             });

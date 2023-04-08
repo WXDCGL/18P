@@ -229,11 +229,19 @@ span{
     .top li{
         margin-bottom: 1px;
     }
+
     footer{
         width: 100vw;
+        height: auto;
+        /* margin: 0; */
     }
-    footer{
-        display: none;
+    .foot{
+        margin: 0;
+        /* flex-direction: column; */
+        /* display: none; */
+    }
+    .footmain{
+        padding: 10px;
     }
     #footmain1{
         display: none;
@@ -242,17 +250,12 @@ span{
 
 /* ---------------------------- */
 @media screen and (max-width: 414px) {
-    body h1{
-        font-size: 12px;
-    }
     .logo img {
         height: 80px;
     }
-    .top ul{
-        /* left: 233px; */
-    }
+
     .top a{
-        line-height: 30px;
+        line-height: 40px;
     }
     main{
         background: fixed;
