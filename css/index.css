@@ -106,8 +106,7 @@
 
 .games{
     display: flex;
-    height: 580px;
-    /* width: 100vw; */
+    height: 500px;
     margin-bottom: 40px;
     position: relative;
 }
@@ -188,13 +187,6 @@
     z-index: 2;
     background-color: rgba(255, 255, 255, .2);
 }
-
-/* .media img{
-    max-height: 960px;
-    margin: -800px 0 0 -200px;
-    opacity: .8;
-    pointer-events: none;
-} */
 
 .media h1::before{
     display: block;
@@ -289,11 +281,11 @@
         background: linear-gradient(to right , #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
     }
     .gamesbackground{
-        /* margin: 100px auto; */
+        margin: 100px auto;
     }
     .media{
         margin-top: 0;
-        padding-bottom: 40px;
+        padding-bottom: 0;
     }
     .media h1{
         width: 100vw;
@@ -328,6 +320,26 @@
     }
     .wrapper h2{
         font-size: 20px;
+    }
+    .news h1{
+        width: 100vw;
+        background: linear-gradient(to right, rgba(245, 203,255,0), #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
+        text-align: center;
+    }
+    .games{
+        height: 300px;
+    }
+    .games iframe{
+        height: 320px;
+    }
+    .games h1{
+        width: 100vw;
+        background: linear-gradient(to right, rgba(245, 203,255,0), #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
+        text-align: center;
+    }
+    .gamesbackground{
+        height: 240px;
+        margin: 50px auto;
     }
     .media ul{
         width: 100vw;

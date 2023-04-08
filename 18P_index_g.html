@@ -55,6 +55,12 @@
     .swiper-pagination-bullet{
       display: none;
     }
+
+    @media screen and (max-width: 414px) {
+      .swiper{
+          padding-top: 60px;
+      }
+    }
   </style>
 </head>
 
@@ -124,7 +130,6 @@
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 4,
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
@@ -135,17 +140,24 @@
       pagination: {
         el: ".swiper-pagination",
       },
-      loop: 'true',
-
+      loop: true,
     });
-    window.addEventListener('resize', function() {
+
+    function updateSwiper() {
       if (window.innerWidth < 414) {
         swiper.params.slidesPerView = 1;
+      } else if (window.innerWidth >= 414 && window.innerWidth < 768) {
+        swiper.params.slidesPerView = 2;
       } else {
-        swiper.params.slidesPerView = 4;
+        swiper.params.slidesPerView = 3;
       }
       swiper.update();
-    });
+    }
+
+    window.addEventListener('resize', updateSwiper);
+
+    // 初始化时更新Swiper
+    updateSwiper();
   </script>
 </body>
 

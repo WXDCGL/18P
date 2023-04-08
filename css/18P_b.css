@@ -229,16 +229,12 @@ span{
     .top li{
         margin-bottom: 1px;
     }
-
     footer{
         width: 100vw;
         height: auto;
-        /* margin: 0; */
     }
     .foot{
         margin: 0;
-        /* flex-direction: column; */
-        /* display: none; */
     }
     .footmain{
         padding: 10px;
@@ -250,10 +246,6 @@ span{
 
 /* ---------------------------- */
 @media screen and (max-width: 414px) {
-    .logo img {
-        height: 80px;
-    }
-
     .top a{
         line-height: 40px;
     }
