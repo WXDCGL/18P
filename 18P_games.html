@@ -78,17 +78,23 @@
                 <h1 data-lang="zh-TW">相關遊戲</h1>
                 <h1 data-lang="jp">ゲーム</h1>
         <div class="gamesmain">
+                <div class="btn">
+                    <button>FPS</button>
+                    <button>Fighting</button>
+                    <button>FPS</button>
+                </div>
                 <ul>
-                    <li>
+                    <!-- FPS -->
+                    <li class="FPS">
                         <a href="https://www.ea.com/en-us/games/apex-legends/buy/pc" target="_blank">
                             <div class="gamename">
-                                <h2>APEX</h2>
+                                <h2>APEX LEGENDS</h2>
                                 <img src="./pic/games/apex.jpg" alt="">
                             </div>  
                         </a>
                     </li>
                      
-                    <li>
+                    <li class="Fighting">
                         <a href="https://playvalorant.com/en-us/?utm_source=riotbar&utm_medium=productcard%2Bplayvalorant.com&utm_campaign=val&utm_content=ep6act1" target="_blank">
                             <div class="gamename">
                                 <h2>VALORANT</h2>
@@ -119,6 +125,51 @@
                             <div class="gamename">
                                 <h2>OVERWATCH2</h2>
                                 <img src="./pic/games/ow2.jpg" alt="">
+                            </div>  
+                        </a>
+                    </li> 
+                    
+                    <li>
+                        <a href="" target="_blank">
+                            <div class="gamename">
+                                <h2>CS:GO</h2>
+                                <img src="./pic/games/CSGO.jpg" alt="">
+                            </div>  
+                        </a>
+                    </li> 
+                    <!-- fighting -->
+                    <li>
+                        <a href="" target="_blank">
+                            <div class="gamename">
+                                <h2>THE KING OF FIGHTERS</h2>
+                                <img src="./pic/games/KOF.jpg" alt="">
+                            </div>  
+                        </a>
+                    </li> 
+                    
+                    <li>
+                        <a href="" target="_blank">
+                            <div class="gamename">
+                                <h2>STREET FIGHTER</h2>
+                                <img src="./pic/games/street fighter.jpg" alt="">
+                            </div>  
+                        </a>
+                    </li> 
+
+                    <li>
+                        <a href="" target="_blank">
+                            <div class="gamename">
+                                <h2>TEKKEN</h2>
+                                <img src="./pic/games/TEKKEN.jpg" alt="">
+                            </div>  
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" target="_blank">
+                            <div class="gamename">
+                                <h2>LEAGUE OF LEGENDS</h2>
+                                <img src="./pic/games/LOL.jpg" alt="">
                             </div>  
                         </a>
                     </li> 
@@ -207,6 +258,15 @@
         </footer>
     </div>
     
+    <script>
+        // 獲取所有不擁有類別的 button 元素
+        const buttonsToHide = document.querySelectorAll('button:not([class])');
+
+        // 迭代所有的 button 元素，並隱藏它們的父元素
+        buttonsToHide.forEach((button) => {
+        button.parentElement.style.display = 'none';
+        });
+    </script>
     <script>
         $(function(){
         let img = $('.logo img');

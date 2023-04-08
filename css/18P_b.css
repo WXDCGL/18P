@@ -254,4 +254,10 @@ span{
         background-image: url("../pic/Intersect.png");
         background-size: contain;
     }
+    .footmain{
+        height: auto;
+    }
+    footer br{
+        display: none;
+    }
 }

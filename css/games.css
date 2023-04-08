@@ -12,6 +12,11 @@
     margin-top: 40px;
 }
 
+.gamesmain .btn{
+    display: flex;
+    justify-content: flex-end
+}
+
 .games h1{
     justify-items: flex-start;
     position: absolute;

@@ -32,8 +32,6 @@
 .newsmain{
     display: flex;
     justify-content: flex-end;
-    /* height: 480px; */
-    /* width: 1200px; */
     margin: 80px auto 40px;
     background-color: #fff;
 }
@@ -48,10 +46,6 @@
     width: 300px;
     border: 1px solid #fff;
     flex-direction: column;
-
-
-    /* background-color: #5b5b5b; */
-
 }
 
 .newsmain-l label{
@@ -325,6 +319,9 @@
         width: 100vw;
         background: linear-gradient(to right, rgba(245, 203,255,0), #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
         text-align: center;
+    }
+    .newsmain{
+        margin: 50px auto 40px;
     }
     .games{
         height: 300px;
