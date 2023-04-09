@@ -151,8 +151,10 @@
         swiper.params.slidesPerView = 1;
       } else if (window.innerWidth >= 414 && window.innerWidth < 768) {
         swiper.params.slidesPerView = 2;
+      } else if (window.innerWidth >= 2000 && window.innerWidth < 4000) {
+        swiper.params.slidesPerView = 5;
       } else {
-        swiper.params.slidesPerView = 3;
+        swiper.params.slidesPerView = 4;
       }
       swiper.update();
     }
