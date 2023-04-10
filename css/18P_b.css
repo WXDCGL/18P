@@ -114,20 +114,23 @@ header{
     animation-name: bg1;      
     animation-duration: 5000ms; 
     animation-timing-function: cubic-bezier(.21,.86,.72,.18);
+    /* animation-timing-function: ease-out; */
+
     animation-iteration-count: infinite;
 }
 
 @keyframes bg1 {
-    0%   { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7); }
-    10%  { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF); }
-    20%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF); }
-    40%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7); }
-    50%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7); }
-    60%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7); }
-    70%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7); }
-    80%  { background-clip: text; background: linear-gradient(to right top, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7); }
-    90%  { background-clip: text; background: linear-gradient(to right top, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7); }
-    100% { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7); }
+    0%   { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7); }
+    10%  { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF); }
+    20%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF); }
+    30%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7); }
+    40%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7); }
+    50%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7); }
+    60%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7); }
+    70%  { background-clip: text; background: linear-gradient(to right top, #B331D7, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7); }
+    80%  { background-clip: text; background: linear-gradient(to right top, #1299B7, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7); }
+    90%  { background-clip: text; background: linear-gradient(to right top, #1299B7, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7); }
+    100% { background-clip: text; background: linear-gradient(to right top, #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #B331D7, #1299B7, #1299B7); }
 } 
 
 main{
