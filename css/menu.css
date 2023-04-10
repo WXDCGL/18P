@@ -1,0 +1,94 @@
+@media screen and (max-width: 820px) {
+    /* header{
+        position: fixed;
+        width: 100vw;
+        z-index: 5;
+    } */
+
+    #menu {
+        display: block;
+        box-sizing: border-box;
+        /* background: rgb(0, 0, 0); */
+        height: 80px;
+        width: 80px;
+        padding: 40px;
+        border-radius: 6px;
+        /* overflow: hidden; */
+        position: relative;
+        /* box-shadow: 0 0 10px rgba(255, 255, 255, 1); */
+        transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
+    }
+    #menu.expanded {
+        /* width: 50vw; */
+    }
+    .menu-list{
+        /* list-style: none;*/
+        margin-top: 50px; 
+        margin-left: -110px;
+        padding: 0; 
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-list li {
+        /* padding: 10px;
+        white-space: nowrap; */
+        visibility: visible;
+        opacity: 1;
+        transition: 0.3s;
+        transform: rotateY(0deg);
+    }
+
+    .menu-list li.hidden {
+        visibility: hidden;
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+  
+    .container {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        rotate: 90deg;
+        transition: 1s;
+    }
+    .container.close {
+        right: 10px;
+    }
+
+    .toggle {
+        position: relative;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+        rotate: 90deg;
+        
+    }
+    .toggle:after, .toggle:before {
+        content: "";
+        background: #ffffff;
+        width: 40px;
+        height: 4px;
+        border-radius: .5rem;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
+    }
+    .toggle:before {
+        top: -30%;
+    }
+    .toggle:after {
+        top: 30%;
+    }
+    .toggle.open:before {
+        transform: rotate(-225deg);
+        top: 0;
+    }
+    .toggle.open:after {
+        transform: rotate(225deg);
+        top: 0;
+}
+}

@@ -98,3 +98,51 @@
     font-weight: bold;
     padding-left: 20px;
 }
+
+/* ---------------------------- */
+@media screen and (max-width: 820px) {
+    body{
+        width: 100vw;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .games{
+        height: 500px;
+    }
+    .games ul{
+        display: none;
+    }
+    .games h1{
+        position: absolute;
+        justify-items: flex-start;
+        align-self: self-start;
+        background: linear-gradient(to right , #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
+    }
+
+}
+
+/* ---------------------------- */
+@media screen and (max-width: 414px) {
+    .wrapper h1{
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .wrapper h2{
+        font-size: 20px;
+    }
+    .games{
+        height: 300px;
+    }
+    .games iframe{
+        height: 320px;
+    }
+    .games h1{
+        width: 100vw;
+        background: linear-gradient(to right, rgba(245, 203,255,0), #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
+        text-align: center;
+    }
+
+}
