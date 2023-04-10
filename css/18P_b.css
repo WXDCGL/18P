@@ -140,16 +140,22 @@ footer{
     margin:  0 auto;
     height: 200px;
     /* background-color: #B331D7; */
-    background-image: url("../pic/Intersect.png");
+    background-image: url("../pic/footer_bg.png");
     background-size: contain;
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    animation-name: FR;      
+    filter: drop-shadow(0 0 4px #B331D7);
+
+    /* animation-name: FR;      
     animation-duration: 3000ms; 
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    line-height: 24px;
+    line-height: 24px; */
+    animation-name: XZ;      
+    animation-duration: 5000ms; 
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
 .foot{
@@ -164,16 +170,27 @@ footer{
     width: auto;
     margin: auto;
     /* background-color: rgba(53, 140, 175, 0.2); */
+    /* background-color: #000000; */
+
 }
+
+/* .footmain ul{
+    background-color: #000000;
+} */
 
 .footmain li{
     color: #b5b5b5;
     font-size: 16px;
     text-decoration: none;
-    background-color: rgba(91, 91, 91, 0.6);
+    background-color: #000;
     border-radius: .5rem;
     margin: 2px;
-    border: 1px solid #5b5b5b;
+    /* border: 1px solid #5b5b5b; */
+    filter: drop-shadow(0 0 4px #B331D7);
+    animation-name: XZ;      
+    animation-duration: 5000ms; 
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
 .ll{
@@ -209,10 +226,16 @@ span{
 
 @keyframes FR {
     0% {  filter:  drop-shadow(0px 0px 4px rgb(228, 118, 255));}
-    50% {  filter:  drop-shadow(0px 0px 4px rgb(18, 153, 183));}
+    50% { filter:  drop-shadow(0px 0px 4px rgb( 18, 153, 183));}
     100%{ filter:  drop-shadow(0px 0px 4px rgb(228, 118, 255));}
 } 
-
+@keyframes XZ {
+    0%   { filter: drop-shadow(0 0 1px #B331D7);}
+    40%  { filter: drop-shadow(0 0 1px #1299B7);}
+    80%  { filter: drop-shadow(0 0 2px #F5CBFF);}
+    100% { filter: drop-shadow(0 0 1px #B331D7);
+    }
+}
 /* ---------------------------- */
 @media screen and (max-width: 820px) {
     header{

@@ -9,7 +9,8 @@
 .games{
     display: flex;
     position: relative;
-    margin-top: 40px;
+    padding-top: 40px;
+    color: #5b5b5b;
 }
 
 .gamesmain .btn{
@@ -71,7 +72,7 @@
     transform: scale(1.1);
     border: 20px solid #ffffff;
 
-    border-left: 20px solid #1299b7;
+    border-left: 20px solid #1299B7;
     border-right: 20px solid #f5CBFF;
     margin-bottom: 20px;
     filter: saturate(100%);
@@ -80,7 +81,7 @@
 
 .gamesmain img{
     display: flex;
-    width: 540px;
+    width: 100%;
     height: 300px;
     background-image: url("../pic/G.REX.png");
     object-fit: cover;
@@ -89,6 +90,7 @@
 
 .gamename{
     background-color: #b331d7;
+    background-color: #5b5b5b;
 }
 
 .gamename h2{
@@ -108,20 +110,48 @@
     .banner{
         display: none;
     }
-
-    .games{
-        height: 500px;
+    .gamesmain{
+        width: 100vw;
+        margin: 0;
+        padding-top: 0;
     }
-    .games ul{
-        display: none;
+    .gamesmain ul{
+        padding-top: 0px;
+        width: 90vw;
+        justify-content: space-between;
     }
-    .games h1{
-        position: absolute;
-        justify-items: flex-start;
-        align-self: self-start;
-        background: linear-gradient(to right , #F5CBFF, #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
+    .gamesmain li{
+        padding-right: 0px;
     }
-
+    .gamesmain a{
+        display: block;
+        width: auto;
+        background-color: rgba(255, 255, 255, .5);
+        padding: 2px;
+        border-radius: .2rem;
+        margin-bottom: 0px;
+        text-decoration: none;
+        filter: saturate(100%);
+        transition: none;
+    }
+    .gamesmain a:hover{
+        padding: 0;
+        outline: 0px solid #ffffff;
+        border-left: 0;
+        margin-bottom: 0px;
+        transform: scale(1);
+        border: 0px solid #ffffff;
+    
+        border-left: 0px solid #1299b7;
+        border-right: 0px solid #f5CBFF;
+        margin-bottom: 0px;
+    }
+    .gamename{
+        width: 360px;
+    }
+    .gamesmain img{
+        height: 200px;
+    }
 }
 
 /* ---------------------------- */
@@ -133,16 +163,15 @@
     .wrapper h2{
         font-size: 20px;
     }
-    .games{
-        height: 300px;
-    }
-    .games iframe{
-        height: 320px;
-    }
     .games h1{
         width: 100vw;
         background: linear-gradient(to right, rgba(245, 203,255,0), #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
         text-align: center;
     }
-
+    .gamename{
+        width: 100%;
+    }
+    .gamesmain img{
+        height: 200px;
+    }
 }
