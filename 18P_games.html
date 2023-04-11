@@ -24,7 +24,7 @@
         </div>
         <nav id="menu">
             <div class="container">
-              <div class="toggle"></div>
+                <div class="toggle"><div class="line"></div><div class="hexagon6"></div></div>
             </div>
             <ul class="menu-list">
                 <li class="hidden"><a href="18P_news.html">
@@ -69,7 +69,7 @@
     <div class="wrapper">
         <main>
             <div class="banner">
-                <iframe src="18P_banner.html" width="900px" height="450px"></iframe>
+                <iframe src="18P_banner.html" width="100%" height="100%"></iframe>
             </div>
             <div class="games">
                 <h1 data-lang="en">GAMES</h1>
@@ -77,13 +77,26 @@
                 <h1 data-lang="jp">ゲーム</h1>
         <div class="gamesmain">
                 <div class="btn">
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                    <label class="btn btn-secondary" for="option1">Checked</label>
+
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn btn-secondary" for="option2">Radio</label>
+
+                    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+                    <label class="btn btn-secondary" for="option3">Disabled</label>
+
+                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                    <label class="btn btn-secondary" for="option4">Radio</label>
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                    <label class="btn btn-secondary" for="option1">FPS</label>
                     <button>FPS</button>
                     <button>Fighting</button>
                     <button>FPS</button>
                 </div>
                 <ul>
                     <!-- FPS -->
-                    <li class="FPS">
+                    <li value="FPS">
                         <a href="https://www.ea.com/en-us/games/apex-legends/buy/pc" target="">
                             <div class="gamename">
                                 <h2>APEX LEGENDS</h2>
@@ -92,7 +105,7 @@
                         </a>
                     </li>
                      
-                    <li class="Fighting">
+                    <li value="Fighting">
                         <a href="https://playvalorant.com/en-us/?utm_source=riotbar&utm_medium=productcard%2Bplayvalorant.com&utm_campaign=val&utm_content=ep6act1" target="">
                             <div class="gamename">
                                 <h2>VALORANT</h2>

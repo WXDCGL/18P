@@ -123,7 +123,7 @@
     .goodsmain a{
         display: block;
         width: auto;
-        background-color: rgba(255, 255, 255, .5);
+        /* background-color: rgba(255, 255, 255, .5); */
         padding: 2px;
         border-radius: .2rem;
         margin-bottom: 0px;

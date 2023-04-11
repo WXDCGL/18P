@@ -75,12 +75,13 @@
     /* background-color: #fff; */
 }
 .supportmain-r ol{
-    width: 800px;
+    /* width: 800px; */
     height: 100%;
 }
 
 .supportmain-r p{
     display: block;
+    width: 94%;
     margin: 20px;
     color: #000;
     word-wrap: break-word;
@@ -95,3 +96,56 @@
 #radio1:checked ~ .supportmain-r .content1,
 #radio2:checked ~ .supportmain-r .content2,
 #radio3:checked ~ .supportmain-r .content3 {display:block}
+
+
+/* ---------------------------- */
+@media screen and (max-width: 820px) {
+    body{
+        width: 100vw;
+    }
+
+    .supportmain{
+        width: 90vw;
+        flex-direction: column;
+        margin: 100px auto 40px;
+
+    }
+    .supportmain-l{
+        width: 100%;
+        flex-direction: column;
+    }
+    .supportmain-l label{
+        margin-bottom: 0;
+        padding: 2px;
+    }
+
+    .supportmain-l h2{
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .supportmain-r{
+        width: 100%;
+    }
+
+}
+
+/* ---------------------------- */
+@media screen and (max-width: 414px) {
+    .wrapper h1{
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .wrapper h2{
+        font-size: 20px;
+    }
+    .support h1{
+        width: 100vw;
+        background: linear-gradient(to right, rgba(245, 203,255,0), #F5CBFF, #B331D7, #B331D7, #B331D7, #1299B7, rgba(18, 153,183,0)); 
+        text-align: center;
+    }
+    .supportmain{
+        margin: 50px auto 40px;
+    }
+
+}
