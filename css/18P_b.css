@@ -288,9 +288,15 @@ span{
     }
     .footmain{
         height: auto;
-        margin: 0;
+        /* margin: 0; */
     }
     footer br{
         display: none;
+    }
+    .footmain a{
+        padding: 0 10px;
+    }
+    .fmli{
+        padding: 0 10px;
     }
 }
