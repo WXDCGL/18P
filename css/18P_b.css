@@ -288,6 +288,7 @@ span{
     }
     .footmain{
         height: auto;
+        margin: 0;
     }
     footer br{
         display: none;
