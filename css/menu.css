@@ -61,7 +61,7 @@
         width: 60px;
         cursor: pointer;
         rotate: 90deg;
-        
+        right: 4px;
     }
     .toggle:after, .toggle:before {
         content: "";
