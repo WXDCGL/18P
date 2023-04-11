@@ -76,11 +76,14 @@
 }
 
 .newsmain-r {
+    
     width:800px;
     border: 1px solid #fff;
 }
 
 .newsmain-r img{
+    position: relative;
+    z-index: 1;
     display: block;
     width:100%;
     object-fit: contain;
@@ -96,6 +99,22 @@
 #radio1:checked ~ .newsmain-r .content1,
 #radio2:checked ~ .newsmain-r .content2,
 #radio3:checked ~ .newsmain-r .content3 {display:block}
+
+
+.newsmain-r::before{
+    display: block;
+    position: absolute;
+    float: left;
+    content: url(../pic/clow.png);
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    margin: -400px 0 0 800px;
+    z-index: 0;
+    opacity: .4;
+    /* rotate: 20deg; */
+    filter:  drop-shadow(4px 4px 4px #F5CBFF);
+}
 
 
 .games{
@@ -184,7 +203,7 @@
 
 .media h1::before{
     display: block;
-    position: relative;
+    position: absolute;
     float: left;
     content: url(../pic/G.REX_top.png);
     width: 10px;
@@ -208,7 +227,7 @@
 
 .rex_bottom::before{
     display: block;
-    position: relative;
+    position: absolute;
     float: left;
     content: url(../pic/G.REX_bottom.png);
     width: 10px;
@@ -317,7 +336,9 @@
     .rex_bottom::before{
         display: none;
     }
-
+    .newsmain-r::before{
+        display: none;
+    }
 }
 
 /* ---------------------------- */
@@ -354,7 +375,7 @@
         text-align: center;
     }
     .gamesbackground{
-        height: 240px;
+        height: 230px;
         margin: 50px auto;
     }
     .media h1{

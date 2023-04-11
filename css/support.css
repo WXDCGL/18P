@@ -34,7 +34,8 @@
   }
 
 .supportmain-l{
-    width: 300px;
+    width: auto;
+    background-color: #5b5b5b;
     border: 1px solid #fff;
 
     /* background-color: #5b5b5b; */
@@ -106,12 +107,11 @@
 
     .supportmain{
         width: 90vw;
-        flex-direction: column;
         margin: 100px auto 40px;
 
     }
     .supportmain-l{
-        width: 100%;
+        /* width: 100%; */
         flex-direction: column;
     }
     .supportmain-l label{
@@ -145,6 +145,7 @@
         text-align: center;
     }
     .supportmain{
+        flex-direction: column;
         margin: 50px auto 40px;
     }
 

@@ -8,73 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inter:wght@400;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="icon" href="./pic/G.REX.ico" type="image/x-icon" / >
+    <link rel="icon" href="./pic/G.REX.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/18P_b.css">
-    <link rel="stylesheet" href="css/menu.css">
-
-
     <title>G.REX</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="18P_index.html">
-                <img src="pic/logo_b.svg" alt="G.REX">
-            </a>
-        </div>
-        <nav id="menu">
-            <div class="container">
-              <div class="toggle"><div class="line"></div><div class="hexagon6"></div></div>
-            </div>
-            <ul class="menu-list">
-                <li class="hidden"><a href="18P_news.html">
-                    <h2 data-lang="en">NEWS</h2>
-                    <h2 data-lang="zh-TW">最新消息</h2>
-                    <h2 data-lang="jp">ニュース</h2>
-                </a></li>
-                <li class="hidden"><a href="18P_games.html">
-                    <h2 data-lang="en">GAMES</h2>
-                    <h2 data-lang="zh-TW">相關遊戲</h2>
-                    <h2 data-lang="jp">ゲーム</h2>
-                </a></li>
-                <li class="hidden"><a href="18P_event.html">
-                    <h2 data-lang="en">EVENT</h2>
-                    <h2 data-lang="zh-TW">活動情報</h2>
-                    <h2 data-lang="jp">イベント</h2>
-                </a></li>
-                <li class="hidden"><a href="18P_shop.html">
-                    <p data-lang="en">SHOP</p>
-                    <p data-lang="zh-TW">線上商店</p>
-                    <p data-lang="jp">ショップ</p>
-                </a></li>
-                <li class="hidden"><a href="18P_support.html">
-                    <h2 data-lang="en">SUPPORT</h2>
-                    <h2 data-lang="zh-TW">常見問題</h2>
-                    <h2 data-lang="jp">サポート</h2>
-                </a></li>
-                <li class="hidden"><a href="18P_contact.html">
-                    <h2 data-lang="en">CONTACT</h2>
-                    <h2 data-lang="zh-TW">聯絡我們</h2>
-                    <h2 data-lang="jp">お問い合わせ</h2>
-                </a></li>
-                <li class="hidden"><a href="18P_login.html">
-                    <h2 data-lang="en">LOGIN</h2>
-                    <h2 data-lang="zh-TW">會員登入</h2>
-                    <h2 data-lang="jp">ログイン</h2>
-                </a></li>
-            </ul>
-        </nav>
-    </header>
+
     <div class="wrapper">
-        <main>
-            <div class="contact">
-                <h1 data-lang="en">CONTACT</h1>
-                <h1 data-lang="zh-TW">聯絡我們</h1>
-                <h1 data-lang="jp">お問い合わせ</h1>
-            </div>
-           
-     
-        </main>
         <footer>
             <ul class="foot">
                 <li class="footmain" id="footmain1">
@@ -94,7 +34,7 @@
                             <p data-lang="zh-TW">活動情報</p>
                             <p data-lang="jp">イベント</p>
                         </a></li>
-                        <li><a href="./18P_shop.html">
+                        <li><a href="./18P_goods.html">
                             <p data-lang="en">SHOP</p>
                             <p data-lang="zh-TW">線上商店</p>
                             <p data-lang="jp">ショップ</p>
@@ -113,7 +53,7 @@
                 </li>
                 <li class="footmain">
                     <ul>
-                        <li><a href="./18P_about.html">
+                        <li><a href="ABOUT">
                             <p data-lang="en">ABOUT</p>
                             <p data-lang="zh-TW">關於我們</p>
                             <p data-lang="jp">私たちについて</p>
@@ -153,54 +93,7 @@
             <span>'Copyright © 本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。</span>
         </footer>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="js/menu.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            if ($(window).width() < 1000) {
-                $('.top').slideUp();
-            }
 
-            $('header').click(function() {
-                if ($(window).width() < 1000) {
-                $('.top').slideToggle();
-                }
-            });
-
-            $(window).resize(function() {
-                if ($(window).width() >= 1000) {
-                $('.top').removeAttr('style');
-                }
-            });
-
-            // let img = $('.logo img');
-            // if (window.innerWidth < 414) {
-            //     img.attr('src', './pic/G.REX.png');
-            // }
-        });
-    </script>
-    <script>
-        function changeLanguage(lang) {
-            var elements = document.querySelectorAll('[data-lang]');
-            for (var i = 0; i < elements.length; i++) {
-                var element = elements[i];
-                if (element.getAttribute('data-lang') === lang) {
-                     element.style.display = 'block';
-                } else {
-                    element.style.display = 'none';
-                }
-            }
-
-             // 存儲當前選擇的語言到本地存儲
-             localStorage.setItem('lang', lang);
-        }
-
-        // 載入時檢查本地存儲，如果有先前選擇的語言，則使用該語言，否則使用預設語言（例如英語）
-        var lang = localStorage.getItem('lang') || 'en';
-        document.getElementById('lang-select').value = lang;
-        changeLanguage(lang);
-    </script>
 </body>
 </html>
