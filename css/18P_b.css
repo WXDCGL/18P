@@ -239,16 +239,22 @@ span{
     100% { filter: drop-shadow(0 0 1px #B331D7);
     }
 }
+#about{
+    display: none;
+}
 /* ---------------------------- */
 @media screen and (max-width: 820px) {
     header{
-        position: relative;
+        position: fixed;
+        width: 100vw;
         z-index: 5;
     }
     main{
         background: fixed;
         background-image: url("../pic/bg_b_pad.png");
         background-size: cover;
+        padding-top: 80px;
+
     }
     .menu-list{
         background: none;

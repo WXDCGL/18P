@@ -48,39 +48,39 @@ renderMessages();
 
 // ================================
 
-// // 删除留言
-// function deleteMessage(index) {
-//   messages.splice(index, 1);
-//   localStorage.setItem('messages', JSON.stringify(messages));
-//   renderMessages();
-// }
+// 删除留言
+function deleteMessage(index) {
+  messages.splice(index, 1);
+  localStorage.setItem('messages', JSON.stringify(messages));
+  renderMessages();
+}
 
-// // 绑定删除按钮事件
-// function bindDeleteButtons() {
-//   const deleteButtons = document.querySelectorAll('.delete-button');
-//   deleteButtons.forEach((button, index) => {
-//     button.addEventListener('click', () => {
-//       deleteMessage(index);
-//     });
-//   });
-// }
+// 绑定删除按钮事件
+function bindDeleteButtons() {
+  const deleteButtons = document.querySelectorAll('.delete-button');
+  deleteButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      deleteMessage(index);
+    });
+  });
+}
 
-// // 渲染留言列表
-// function renderMessages() {
-//   const messagesContainer = document.getElementById('messages-container');
-//   messagesContainer.innerHTML = '';
+// 渲染留言列表
+function renderMessages() {
+  const messagesContainer = document.getElementById('messages-container');
+  messagesContainer.innerHTML = '';
 
-//   messages.forEach((message, index) => {
-//     const messageEl = document.createElement('div');
-//     messageEl.className = 'message';
-//     messageEl.innerHTML = `
-//       <h3>${message.name}</h3>
-//       <p>${message.content}</p>
-//       <small>${new Date(message.timestamp).toLocaleString()}</small>
-//       <button class="delete-button">删除</button>
-//     `;
-//     messagesContainer.appendChild(messageEl);
-//   });
+  messages.forEach((message, index) => {
+    const messageEl = document.createElement('div');
+    messageEl.className = 'message';
+    messageEl.innerHTML = `
+      <h3>${message.name}</h3>
+      <p>${message.content}</p>
+      <small>${new Date(message.timestamp).toLocaleString()}</small>
+      <button class="delete-button">删除</button>
+    `;
+    messagesContainer.appendChild(messageEl);
+  });
 
-//   bindDeleteButtons();
-// }
+  bindDeleteButtons();
+}

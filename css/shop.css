@@ -168,6 +168,9 @@
     .shopmain ul{
         justify-content: center;
     }
+    .shopmain a{
+        height: auto;
+    }
     .shopname{
         width: 330px;
     }

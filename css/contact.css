@@ -49,23 +49,56 @@
     background-color: rgba(255, 255, 255, .6);
 }
 
+label{
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+
 #name-input{
     width:200px;
+    background-color: #cccccc;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: .25rem;
+    font-size: 24px;
 }
 
 #content-input{
     resize:none;
     width:200px;
     height: 200px;
+    background-color: #cccccc;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: .25rem;
+    font-size: 24px;
+}
+
+#submit{
+    background: #5b5b5b;
+    color: #FFF;
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: .35rem;
+    margin: 20px 0;
 }
 
 #messages-container{
     width: 60%;
     padding: 10px;
     border-radius: .25rem;
+    font-size: 24px;
     background-color: rgba(255, 255, 255, .6);
     word-wrap: break-word;
-
+}
+#messages-container button{
+    background: #5b5b5b;
+    color: #FFF;
+    height: 40px;
+    font-size: 24px;
+    border-radius: .35rem;
+    margin: 20px 0;
 }
 
 /* ---------------------------- */
@@ -144,5 +177,8 @@
         background-color: rgba(255, 255, 255, .6);
         word-wrap: break-word;
     
+    }
+    #submit{
+        width: 290px;
     }
 }
