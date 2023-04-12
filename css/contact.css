@@ -161,12 +161,12 @@ label{
         background-color: rgba(255, 255, 255, .6);
     }
     #name-input{
-        width: 290px;
+        width: 80vw;
     }
     
     #content-input{
         resize:none;
-        width: 290px;
+        width: 80vw;
         height: 100px;
     }
     #messages-container{
@@ -179,6 +179,6 @@ label{
     
     }
     #submit{
-        width: 290px;
+        width: 80vw;
     }
 }
