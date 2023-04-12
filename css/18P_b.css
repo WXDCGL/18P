@@ -284,6 +284,11 @@ span{
 
 /* ---------------------------- */
 @media screen and (max-width: 414px) {
+    .menu-list a{
+        font-size: 24px;
+        line-height: 40px;
+ 
+    }
     /* .menu a{
         line-height: 40px;
     } */
