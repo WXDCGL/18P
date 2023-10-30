@@ -1,5 +1,6 @@
 @import url(reset.css);
 body{
+    height: 100%;
     font-family: inter, '微軟正黑體';
     line-height: 1.5;
     color: #ffffff;
@@ -149,7 +150,6 @@ footer{
     position: relative;
     z-index: 2;
     filter: drop-shadow(0 0 4px #B331D7);
-
     /* animation-name: FR;      
     animation-duration: 3000ms; 
     animation-timing-function: linear;

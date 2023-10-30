@@ -1,4 +1,5 @@
 .support{
+    height: 100%;
     display: flex;
     position: relative;
     padding-top: 40px;
@@ -20,6 +21,7 @@
 }
 
 .supportmain{
+    height: 65vh;
     display: flex;
     justify-content: flex-end;
     /* height: 480px; */
@@ -107,6 +109,7 @@
     }
 
     .supportmain{
+        height: 100%;
         width: 90vw;
         margin: 100px auto 40px;
 
